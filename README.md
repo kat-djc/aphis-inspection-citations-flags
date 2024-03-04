@@ -23,4 +23,4 @@ Generated CSV files are copies of inspections-citations CSV, with new columns ha
 # Licensing 
 The Data Liberation Project–generated CSV files are available under Creative Commons’ CC BY-SA 4.0 license terms. This repository’s code is available under the MIT License terms.
 
-Code contributed by Data Liberation Project volunteer Kat de Jesus Chua. 
+Code contributed by Data Liberation Project volunteer Kat De Jesus Chua. 
