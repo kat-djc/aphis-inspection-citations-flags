@@ -1,12 +1,16 @@
-# aphis-inspection-reports-heatflag
-Code for creating a heat/temperature flag for inspections data from USDA's Animal and Plant Health Inspection Service.
+# Citation Narrative Flagging
+This repository contains citations with code for creating various flags for inspections data from USDA's Animal and Plant Health Inspection Service. 
 
-## Overview
-* Under construction
+## Motivation
+
+
+## Flagged Citations CSVs
+Generated CSV files are copies of inspections-citations CSV, with new columns have the prefix 'flag_'.
+  * Indicator columns for conditions. Conditions are specific to each flag and outlined in the Jupyter Notebooks that generate the CSVs. 
+  * Flag columns is the name of the script, for example, the overheating flag is 'flag_overheating'
   
 ## Future Directions
-* The APHIS inspection report data is continually updated. The key words used in the heat/temperature flag should be reviewed and refined periodically, in case of data shift.
-* Topic clustering revealed additional categories that could be added to the dataset as flags.
+* The APHIS inspection report data is continually updated. The keywords used in the heat/temperature flag should be reviewed and refined periodically, in case of data shift. The following are flags we will be working. 
     * Transport of animals
     * Absent/incorrectly written programs of veterinary care
     * Flaws in animal enclosures/physical environment
@@ -15,3 +19,8 @@ Code for creating a heat/temperature flag for inspections data from USDA's Anima
     * Unauthorized sale or exhibition of animals
     * Expired medications
     * Incomplete inventory of animals
+      
+# Licensing 
+The Data Liberation Project–generated CSV files are available under Creative Commons’ CC BY-SA 4.0 license terms. This repository’s code is available under the MIT License terms.
+
+Code contributed by Data Liberation Project volunteer Kat de Jesus Chua. 
