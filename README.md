@@ -1,4 +1,4 @@
-# Citation Narrative Flagging
+# Narrative Flagging
 This repository contains citations with code for creating various flags for inspections data from USDA's Animal and Plant Health Inspection Service. 
 
 ## Motivation
@@ -10,7 +10,7 @@ Generated CSV files are copies of inspections-citations CSV, with new columns ha
   * Flag columns is the name of the script, for example, the overheating flag is 'flag_overheating'
   
 ## Future Directions
-* The APHIS inspection report data is continually updated. The keywords used in the heat/temperature flag should be reviewed and refined periodically, in case of data shift. The following are flags we will be working. 
+* The APHIS inspection report data is continually updated. The keywords used in the heat/temperature flag should be reviewed and refined periodically, in case of data shift. The following are flags we will be working on. 
     * Transport of animals
     * Absent/incorrectly written programs of veterinary care
     * Flaws in animal enclosures/physical environment
