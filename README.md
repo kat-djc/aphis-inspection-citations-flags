@@ -2,8 +2,10 @@
 The Data Liberation Project's [APHIS Inspection Report Scraper]([url](https://github.com/data-liberation-project/aphis-inspection-reports)) collects all publicly-available inspection reports published by the [US Department of Agriculture's Animal and Plant Health Inspection Service]([url](https://www.aphis.usda.gov/aphis/home/)). 
 
 This repository contains CSV files with various flag columns, as well as the scripts used for creating these flag columns. Flag columns available: 
- * Overheating
- * Air Transit 
+ * Overheating:
+   * With climates rapidly changing, failures to sufficiently protect animals from low/high temperatures may become more common. This flag captures narratives related to extreme ambient temperatures and their consequences on animals.
+ * Air Transit:
+   * We noticed many narratives mentioning air waybills. This flag captures narratives related to the shipment of animals via air transportation.
 
 ## Motivation
 The narrative column contains important details to the inspection. Flagging phenomenons that have an identifiable public interest element that may spark future journalistic investigations. 
