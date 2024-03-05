@@ -4,14 +4,14 @@ This repository contains inspection reports published by the US Department of Ag
 ## Background
 The Data Liberation Project's [APHIS Inspection Report Scraper](https://github.com/data-liberation-project/aphis-inspection-reports) extracts data from all [publicly-available inspection reports](https://efile.aphis.usda.gov/PublicSearchTool/s/inspection-reports) published by APHIS. This data is refreshed on a regular basis. 
 
-Each [inspection's citation]([url](https://github.com/data-liberation-project/aphis-inspection-reports/blob/main/data/combined/inspections-citations.csv)) include a "narrative" column containing text written by APHIS inspectors. Flagging recurring themes in the citation narratives will aid better understanding of the APHIS inspections report data, and potentially lead to more in-depth investigations. 
+Each [inspection's citation]([url](https://github.com/data-liberation-project/aphis-inspection-reports/blob/main/data/combined/inspections-citations.csv)) includes a "narrative" column containing text details written by the assigned APHIS inspector. Flagging recurring themes in the citation narratives aids a better understanding of the APHIS inspections report data, and may lead to more in-depth investigations. 
 
 ## Current Flags
-This project is ongoing, with current flag logic being updated, and new flags being proposed and created. The flag columns currently available are: 
+This project is ongoing, with current flag logic being updated, and new flags being proposed and created. The flags currently available are: 
  * Extreme Temperatures:
    * With climates rapidly changing, failures to sufficiently protect animals from both low and high temperatures may become more common. This flag captures narratives related to extreme ambient temperatures and their consequences on animals.
  * Air Transport:
-   * We noticed that the most frequent APHIS inspection sites were airlines. While being transported, animals can be subject to unsafe conditions, lack of food and water, or otherwise improper handling. Investigation into report narratives could reveal critical areas of improvement for airlines.
+   * Some of the most frequent APHIS inspection sites are airlines. While being transported, animals can be subject to unsafe conditions, lack of food and water, or otherwise improper handling. Investigation into report narratives could reveal critical areas of improvement for airlines.
 
 ## Flagged Citations 
 The [flag script outputs]([url](https://github.com/kat-djc/aphis-inspection-reports-flags/tree/main/flagged_citations)) are copies of the inspections-citations CSV file, with new columns using the prefix 'flag_'. 
