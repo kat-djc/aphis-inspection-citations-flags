@@ -1,5 +1,5 @@
 # APHIS Inspection Reports Flags
-This repository contains inspection reports published by the US Department of Agriculture's [Animal and Plant Health Inspection Service](https://www.aphis.usda.gov/aphis/home/) (APHIS), with added flags for phenomenons of public interest. It also contains the scripts for creating these flag columns. 
+This repository contains inspection reports published by the US Department of Agriculture's [Animal and Plant Health Inspection Service](https://www.aphis.usda.gov/aphis/home/) (APHIS), with added flags for phenomenons of public interest. It also contains the [scripts]([url](https://github.com/kat-djc/aphis-inspection-reports-flags/tree/main/scripts)) for creating these flag columns. 
 
 ## Background
 The Data Liberation Project's [APHIS Inspection Report Scraper](https://github.com/data-liberation-project/aphis-inspection-reports) extracts data from all [publicly-available inspection reports](https://efile.aphis.usda.gov/PublicSearchTool/s/inspection-reports) published by APHIS. This data is refreshed on a regular basis. 
@@ -14,7 +14,7 @@ This project is ongoing, with current flag logic being updated, and new flags be
    * We noticed that the most frequent APHIS inspection sites were airlines. While being transported, animals can be subject to unsafe conditions, lack of food and water, or otherwise improper handling. Investigation into report narratives could reveal critical areas of improvement for airlines.
 
 ## Flagged Citations 
-The flag script outputs are copies of the inspections-citations CSV file, with new columns using the prefix 'flag_'. 
+The [flag script outputs]([url](https://github.com/kat-djc/aphis-inspection-reports-flags/tree/main/flagged_citations)) are copies of the inspections-citations CSV file, with new columns using the prefix 'flag_'. 
   * Columns with the prefix 'flag_cond' are indicator columns for the conditions used to assign the flag. Conditions are specific to each flag and outlined in the Jupyter Notebooks that generate the CSV files.
   
 ## Future Directions
