@@ -8,9 +8,9 @@ Each [inspection's citation]([url](https://github.com/data-liberation-project/ap
 
 ## Current Flags
 This project is ongoing, with current flag logic being updated, and new flags being proposed and created. The flags currently available are: 
- * Extreme Temperatures:
+ * Extreme Temperatures
    * With climates rapidly changing, failures to sufficiently protect animals from both low and high temperatures may become more common. This flag captures narratives related to extreme ambient temperatures and their consequences on animals.
- * Air Transport:
+ * Air Transport
    * Some of the most frequent APHIS inspection sites are airlines. While being transported, animals can be subject to unsafe conditions, lack of food and water, or otherwise improper handling. Investigation into report narratives could reveal critical areas of improvement for airlines.
 
 ## Flagged Citations 
