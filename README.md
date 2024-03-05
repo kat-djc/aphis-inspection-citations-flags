@@ -14,7 +14,7 @@ This project is ongoing, with current flag logic being updated, and new flags be
    * We noticed that the most frequent APHIS inspection sites were airlines. While being transported, animals can be subject to unsafe conditions, lack of food and water, or otherwise improper handling. Investigation into report narratives could reveal critical areas of improvement for airlines.
 
 ## Flagged Citations 
-The flag scripts' output are copies of the inspections-citations CSV, with new columns using the prefix 'flag_'.
+The flag script outputs are copies of the inspections-citations CSV file, with new columns using the prefix 'flag_'. 
   * Columns with the prefix 'flag_cond' are indicator columns for the conditions used to assign the flag. Conditions are specific to each flag and outlined in the Jupyter Notebooks that generate the CSV files.
   
 ## Future Directions
