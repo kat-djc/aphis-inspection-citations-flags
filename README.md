@@ -1,13 +1,13 @@
 # APHIS Inspection Reports Flags
-This repository contains inspection reports published by the US Department of Agriculture's [Animal and Plant Health Inspection Service](https://www.aphis.usda.gov/aphis/home/) (APHIS), with added flags for phenomenons of public interest. It also contains the scripts for creating these flag columns. 
+This repository contains inspection reports originally published by the US Department of Agriculture's [Animal and Plant Health Inspection Service](https://www.aphis.usda.gov/aphis/home/) (APHIS), collated by the Data Liberation Project's [APHIS Inspection Report Scraper]([url](https://github.com/data-liberation-project/aphis-inspection-reports)), with added flags for phenomenons of public interest. The repository also contains the scripts for creating these flags.
 
 ## Background
-The Data Liberation Project's [APHIS Inspection Report Scraper](https://github.com/data-liberation-project/aphis-inspection-reports) extracts data from all [publicly-available inspection reports](https://efile.aphis.usda.gov/PublicSearchTool/s/inspection-reports) published by APHIS. This data is refreshed on a regular basis. 
+The Data Liberation Project's APHIS Inspection Report Scraper extracts and collects data from all [publicly-available inspection reports](https://efile.aphis.usda.gov/PublicSearchTool/s/inspection-reports). 
 
-Each [inspection's citation]([url](https://github.com/data-liberation-project/aphis-inspection-reports/blob/main/data/combined/inspections-citations.csv)) includes a "narrative" column containing text details written by the assigned APHIS inspector. Flagging recurring themes in the citation narratives aids a better understanding of the APHIS inspections report data, and may lead to more in-depth investigations. 
+Each [inspection's citation]([url](https://github.com/data-liberation-project/aphis-inspection-reports/blob/main/data/combined/inspections-citations.csv)) includes a "narrative" column containing text details written by an APHIS inspector. The narrative column is highly informative and critical to understanding the story behind each citation. Flagging recurring themes will aid understanding of the APHIS data and may lead to more in-depth investigations. 
 
 ## Current Flags
-This project is ongoing, with current flag logic being updated, and new flags being proposed and created. The flags currently available are: 
+This project is ongoing, with current flag logic being updated and new flags being proposed and created. The flags currently available are: 
  * Extreme Temperatures
    * With climates rapidly changing, failures to sufficiently protect animals from both low and high temperatures may become more common. This flag captures narratives related to extreme ambient temperatures and their consequences on animals.
  * Air Transport
