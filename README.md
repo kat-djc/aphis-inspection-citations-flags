@@ -1,8 +1,8 @@
 # APHIS Inspection Reports Flags
-This repository contains inspection reports published by the [US Department of Agriculture's Animal and Plant Health Inspection Service]([url](https://www.aphis.usda.gov/aphis/home/)), with added flags for phenomenons of public interest. It also contains the scripts for creating these flag columns. 
+This repository contains inspection reports published by the US Department of Agriculture's [Animal and Plant Health Inspection Service](https://www.aphis.usda.gov/aphis/home/) (APHIS), with added flags for phenomenons of public interest. It also contains the scripts for creating these flag columns. 
 
 # Background
-The Data Liberation Project's [APHIS Inspection Report Scraper](https://github.com/data-liberation-project/aphis-inspection-reports) extracts data from all [publicly-available inspection reports](https://efile.aphis.usda.gov/PublicSearchTool/s/inspection-reports) published by the US Department of Agriculture's [Animal and Plant Health Inspection Service](https://www.aphis.usda.gov/aphis/home/) (APHIS).
+The Data Liberation Project's [APHIS Inspection Report Scraper](https://github.com/data-liberation-project/aphis-inspection-reports) extracts data from all [publicly-available inspection reports](https://efile.aphis.usda.gov/PublicSearchTool/s/inspection-reports) published by APHIS.
 
 Each [inspection's citation]([url](https://github.com/data-liberation-project/aphis-inspection-reports/blob/main/data/combined/inspections-citations.csv)) include a "narrative" column containing text written by APHIS inspectors. Flagging recurring themes in the citation narratives will aid better understanding of the APHIS inspections report data, and potentially lead to more in-depth investigations. 
 
@@ -14,10 +14,8 @@ This project is ongoing, with current flag logic being updated, and new flags be
    * We noticed that the most frequent APHIS inspection sites were airlines. While being transported, animals can be subject to unsafe conditions, lack of food and water, or otherwise improper handling. Investigation into report narratives could reveal critical areas of improvement for airlines.
 
 ## Flagged Citations 
-Generated CSV files are copies of the inspections-citations CSV, with new columns using the prefix 'flag_'.
-  * Indicator columns for conditions. Conditions are specific to each flag and outlined in the Jupyter Notebooks that generate the CSV files. 
-  * Flag columns is the name of the script, for example, the overheating flag is 'flag_overheating'
-
+The flag scripts' output are copies of the inspections-citations CSV, with new columns using the prefix 'flag_'.
+  * Columns with the prefix 'flag_cond' are indicator columns for the conditions used to assign the flag. Conditions are specific to each flag and outlined in the Jupyter Notebooks that generate the CSV files.
   
 ## Future Directions
 * The following are potential future flags:
