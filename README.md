@@ -1,5 +1,5 @@
 # APHIS Inspection Reports Flags
-This repository contains inspection reports published by the US Department of Agriculture's [Animal and Plant Health Inspection Service](https://www.aphis.usda.gov/aphis/home/) (APHIS), with added flags for phenomenons of public interest. It also contains the [scripts]([url](https://github.com/kat-djc/aphis-inspection-reports-flags/tree/main/scripts)) for creating these flag columns. 
+This repository contains inspection reports published by the US Department of Agriculture's [Animal and Plant Health Inspection Service](https://www.aphis.usda.gov/aphis/home/) (APHIS), with added flags for phenomenons of public interest. It also contains the scripts for creating these flag columns. 
 
 ## Background
 The Data Liberation Project's [APHIS Inspection Report Scraper](https://github.com/data-liberation-project/aphis-inspection-reports) extracts data from all [publicly-available inspection reports](https://efile.aphis.usda.gov/PublicSearchTool/s/inspection-reports) published by APHIS. This data is refreshed on a regular basis. 
@@ -28,4 +28,7 @@ The [flag script outputs]([url](https://github.com/kat-djc/aphis-inspection-repo
 ## Licensing 
 The original APHIS reports are public domain. The Data Liberation Project–generated CSV files are available under Creative Commons’ CC BY-SA 4.0 license terms. This repository’s code is available under the MIT License terms.
 
-Code contributed by Data Liberation Project volunteer Kat de Jesus Chua. 
+## Questions?
+File an issue in this repository or email Jeremy Singer-Vine at jsvine@gmail.com.
+
+Code contributed by Data Liberation Project volunteer Kat de Jesus Chua, reachable at kathdjc@gmail.com.
