@@ -1,12 +1,12 @@
 # APHIS Inspection Reports Flags
 This repository contains inspection reports published by the US Department of Agriculture's [Animal and Plant Health Inspection Service](https://www.aphis.usda.gov/aphis/home/) (APHIS), with added flags for phenomenons of public interest. It also contains the scripts for creating these flag columns. 
 
-# Background
+## Background
 The Data Liberation Project's [APHIS Inspection Report Scraper](https://github.com/data-liberation-project/aphis-inspection-reports) extracts data from all [publicly-available inspection reports](https://efile.aphis.usda.gov/PublicSearchTool/s/inspection-reports) published by APHIS. This data is refreshed on a regular basis. 
 
 Each [inspection's citation]([url](https://github.com/data-liberation-project/aphis-inspection-reports/blob/main/data/combined/inspections-citations.csv)) include a "narrative" column containing text written by APHIS inspectors. Flagging recurring themes in the citation narratives will aid better understanding of the APHIS inspections report data, and potentially lead to more in-depth investigations. 
 
-# Current Flags
+## Current Flags
 This project is ongoing, with current flag logic being updated, and new flags being proposed and created. The flag columns currently available are: 
  * Extreme Temperatures:
    * With climates rapidly changing, failures to sufficiently protect animals from both low and high temperatures may become more common. This flag captures narratives related to extreme ambient temperatures and their consequences on animals.
@@ -25,7 +25,7 @@ The flag script outputs are copies of the inspections-citations CSV file, with n
     * Unauthorized sale or exhibition of animals
     * Expired medications
       
-# Licensing 
+## Licensing 
 The original APHIS reports are public domain. The Data Liberation Project–generated CSV files are available under Creative Commons’ CC BY-SA 4.0 license terms. This repository’s code is available under the MIT License terms.
 
 Code contributed by Data Liberation Project volunteer Kat de Jesus Chua. 
