@@ -1,5 +1,5 @@
-# APHIS Inspection Reports Flags
-This repository contains inspection reports originally published by the US Department of Agriculture's [Animal and Plant Health Inspection Service](https://www.aphis.usda.gov/aphis/home/) (APHIS), collated by the Data Liberation Project's [APHIS Inspection Report Scraper]([url](https://github.com/data-liberation-project/aphis-inspection-reports)), with added flags for phenomenons of public interest. The repository also contains the scripts for creating these flags.
+# APHIS Inspection Citations Flags
+This repository contains inspection citations reports originally published by the US Department of Agriculture's [Animal and Plant Health Inspection Service](https://www.aphis.usda.gov/aphis/home/) (APHIS), collated by the Data Liberation Project's [APHIS Inspection Report Scraper]([url](https://github.com/data-liberation-project/aphis-inspection-reports)), with added flags for phenomenons of public interest. The repository also contains the scripts for creating these flags.
 
 ## Background
 The Data Liberation Project's APHIS Inspection Report Scraper extracts and collects data from all [publicly-available inspection reports](https://efile.aphis.usda.gov/PublicSearchTool/s/inspection-reports). 
@@ -11,7 +11,7 @@ This project is ongoing, with current flag logic being updated and new flags bei
  * Extreme Temperatures
    * With climates rapidly changing, failures to sufficiently protect animals from both low and high temperatures may become more common. This flag captures narratives related to extreme ambient temperatures and their consequences on animals.
  * Air Transport
-   * Some of the most frequent APHIS inspection sites are airlines. While being transported, animals can be subject to unsafe conditions, lack of food and water, or otherwise improper handling. Investigation into report narratives could reveal critical areas of improvement for airlines.
+   * Some of the most frequent APHIS inspection sites are airlines. While being transported, animals can be subject to unsafe conditions, lack of food and water, or otherwise improper handling. Investigation into citation narratives could reveal critical areas of improvement for airlines.
 
 ## Flagged Citations 
 The [flag script outputs]([url](https://github.com/kat-djc/aphis-inspection-reports-flags/tree/main/flagged_citations)) are copies of the inspections-citations CSV file, with new columns using the prefix 'flag_'. 
