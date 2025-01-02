@@ -31,9 +31,8 @@ jobs:
       run: |
         git submodule update --init --recursive
         cd aphis-inspection-reports
-        git config pull.rebase false   # Use merge strategy to handle divergence
-        git pull origin main
-        
+        git pull origin main --allow-unrelated-histories --no-rebase  # Allow unrelated histories during pull
+
     - name: Ensure the specific file is updated
       run: |
         cd aphis-inspection-reports/data/combined
