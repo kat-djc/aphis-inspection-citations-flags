@@ -6,7 +6,7 @@ def main():
 
     df_inspections_citations_new_rows = pd.read_csv('../data/new_rows/new_inspections_citations.csv')
 
-    df_inspections_citations = pd.read_csv('../data/raw/aphis-inspection-reports/data/combined/inspections-citations.csv')
+    df_inspections_citations = pd.read_csv('../aphis-inspection-reports/data/combined/inspections-citations.csv')
 
     df_combined = pd.concat([df_original, df_new_rows])
 
