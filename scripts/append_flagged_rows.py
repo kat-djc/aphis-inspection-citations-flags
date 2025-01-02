@@ -8,7 +8,7 @@ def main():
 
     df_inspections_citations = pd.read_csv('../aphis-inspection-reports/data/combined/inspections-citations.csv')
 
-    df_combined = pd.concat([df_original, df_new_rows])
+    df_combined = pd.concat([df_last_run_inspections_citations, df_inspections_citations_new_rows])
 
     print("----------------------------------------------------------------------------")
     print("Validation of append_flagged_rows.py logic...")
