@@ -24,12 +24,12 @@ jobs:
     - name: Update submodule
       run: |
         git submodule update --init --recursive
-        cd data/raw/aphis-inspection-reports
+        cd .data/raw/aphis-inspection-reports
         git pull origin main
 
     - name: Ensure the specific file is updated
       run: |
-        cd data/raw/aphis-inspection-reports/data/combined
+        cd .data/raw/aphis-inspection-reports/data/combined
         git fetch --all
         git checkout origin/main -- inspections-citations.csv
 
