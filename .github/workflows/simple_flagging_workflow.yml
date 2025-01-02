@@ -32,17 +32,18 @@ jobs:
         git config --global user.email "you@example.com"
         git config --global user.name "GitHub Actions"
 
-    - name: Update submodule and pull latest changes
+    - name: Update submodule and pull the specific file
       run: |
-        git submodule update --init --recursive
-        cd aphis-inspection-reports
-        git pull origin main --allow-unrelated-histories --no-rebase
+        git submodule update --init --recursive  # Ensure the submodule is initialized and updated
+        cd aphis-inspection-reports  # Go into the submodule directory
+        git fetch origin  # Fetch latest updates from the remote repository
+        git checkout origin/main -- data/combined/inspections-citations.csv  # Checkout the specific file
 
     - name: Ensure the specific file is updated
       run: |
         cd aphis-inspection-reports/data/combined
-        git fetch --all
-        git checkout origin/main -- inspections-citations.csv
+        git fetch --all  # Fetch all changes
+        git checkout origin/main -- inspections-citations.csv  # Ensure file is from the remote
 
     - name: Extract new rows
       run: |
@@ -63,5 +64,3 @@ jobs:
       run: |
         cd scripts
         python append_flagged_rows.py
-
-
