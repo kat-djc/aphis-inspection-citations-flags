@@ -28,6 +28,7 @@ jobs:
       run: |
         git submodule update --init --recursive
         cd data/raw/aphis-inspection-reports
+        git config pull.rebase false   # Use merge strategy to handle divergence
         git pull origin main
 
     - name: Ensure the specific file is updated
