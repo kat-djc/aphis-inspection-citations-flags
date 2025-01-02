@@ -101,7 +101,7 @@ class RuleBasedClassifier:
         }
 
 # Apply classification to the new_inspections_citations DataFrame
-def classify_inspection_narratives():
+def classify_inspection_narratives(new_inspections_citations):
     # Create classifier instance
     classifier = RuleBasedClassifier()
     
@@ -119,40 +119,27 @@ def classify_inspection_narratives():
     
     return results_df
 
-# Run the classification
-classified_df = classify_inspection_narratives()
-
-# Optional: Display summary statistics
-print("\nClassification Summary:")
-print(f"Total records: {len(classified_df)}")
-print(f"Records flagged as air transport: {classified_df['air_transport_flag'].sum()}")
-print(f"Percentage flagged: {(classified_df['air_transport_flag'].mean() * 100):.2f}%")
-
-# Optional: Display a few examples of matched records
-print("\nExample Matched Records:")
-matched_examples = classified_df[classified_df['air_transport_flag'] == 1].head()
-for _, row in matched_examples.iterrows():
-    print(f"\nNarrative: {row['narrative'][:200]}...")  # Show first 200 characters
-    print(f"Matched Rules: {row['matched_positive_rules']}")
-    print(f"Classification Explanation: {row['classification_explanation']}")
-
 # Example usage
 if __name__ == "__main__":
-    # Create classifier instance
-    classifier = RuleBasedClassifier()
-  
-    # Create sample DataFrame
-    df = pd.DataFrame("../data/new_rows/new_inspections_citations.csv")
+    # Load the data (assuming the file path is correct)
+    new_inspections_citations = pd.read_csv('../data/new_rows/new_inspections_citations.csv')
     
-    # Classify texts
-    results_df = classifier.classify_dataframe(df, 'narrative')
-    
-    # Display results
-    print("\nClassification Results:")
-    for _, row in results_df.iterrows():
-        print(f"\nText: {row['narrative']}")
-        print(f"Classification: {row['classification']}")
-        print(f"Explanation: {row['classification_explanation']}")
+    # Classify the inspections
+    classified_df = classify_inspection_narratives(new_inspections_citations)
+
+    # Display summary statistics
+    print("\nClassification Summary:")
+    print(f"Total records: {len(classified_df)}")
+    print(f"Records flagged as air transport: {classified_df['air_transport_flag'].sum()}")
+    print(f"Percentage flagged: {(classified_df['air_transport_flag'].mean() * 100):.2f}%")
+
+    # Display a few examples of matched records
+    print("\nExample Matched Records:")
+    matched_examples = classified_df[classified_df['air_transport_flag'] == 1].head()
+    for _, row in matched_examples.iterrows():
+        print(f"\nNarrative: {row['narrative'][:200]}...")  # Show first 200 characters
+        print(f"Matched Rules: {row['matched_positive_rules']}")
+        print(f"Classification Explanation: {row['classification_explanation']}")
 
     # Write classified_df to intial_flagged
     classified_df.to_csv('../data/flagged/air_transport/initial_flagged.csv', index=False)
