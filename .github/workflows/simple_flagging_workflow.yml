@@ -21,6 +21,9 @@ jobs:
     - name: Install dependencies
       run: pip install --user -r requirements.txt  # Ensure all dependencies are listed here
       
+    - name: Configure Git Pull Behavior
+      run: git config pull.rebase false  # Explicitly set pull behavior to avoid divergence issues
+
     - name: Update submodule
       run: |
         git submodule update --init --recursive
@@ -43,4 +46,6 @@ jobs:
       run: python .scripts/flag_air_transport.py 
 
     - name: Append flagged rows
+      run: python .scripts/append_flagged_rows.py
+
       run: python .scripts/append_flagged_rows.py
