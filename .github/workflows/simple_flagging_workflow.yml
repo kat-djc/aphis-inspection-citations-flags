@@ -47,20 +47,24 @@ jobs:
 
     - name: Extract new rows
       run: |
+        source venv/bin/activate  # Ensure the virtual environment is activated
         cd scripts
         python extract_new_rows.py
 
     - name: Flag extreme temperatures
       run: |
+        source venv/bin/activate  # Ensure the virtual environment is activated
         cd scripts
         python flag_extreme_temperatures.py
 
     - name: Flag air transportation issues
       run: |
+        source venv/bin/activate  # Ensure the virtual environment is activated
         cd scripts
         python flag_air_transport.py
 
     - name: Append flagged rows
       run: |
+        source venv/bin/activate  # Ensure the virtual environment is activated
         cd scripts
         python append_flagged_rows.py
