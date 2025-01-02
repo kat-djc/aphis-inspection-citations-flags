@@ -25,13 +25,13 @@ jobs:
       run: git config pull.rebase false  # Explicitly set pull behavior to avoid divergence issues
 
     - name: Update submodule
-      run: 
+      run: |
         git submodule update --init --recursive
         cd data/raw/aphis-inspection-reports
         git pull origin main
 
     - name: Ensure the specific file is updated
-      run: 
+      run: |
         cd data/raw/aphis-inspection-reports/data/combined
         git fetch --all
         git checkout origin/main -- inspections-citations.csv
