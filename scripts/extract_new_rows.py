@@ -29,7 +29,7 @@ def main():
 
     df_original = pd.read_csv('../data/last_run_inspections_citations.csv')
 
-    df_new = pd.read_csv('../data/raw/aphis-inspection-reports/data/combined/inspections-citations.csv')
+    df_new = pd.read_csv('../aphis-inspection-reports/data/combined/inspections-citations.csv')
 
     # Extracting the new rows based on the shape of original_df
     new_rows = extract_new_rows(df_original, df_new)
