@@ -1,0 +1,3 @@
+[submodule "aphis-inspection-reports"]
+	path = aphis-inspection-reports
+	url = https://github.com/data-liberation-project/aphis-inspection-reports.git
