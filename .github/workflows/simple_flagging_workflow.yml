@@ -11,7 +11,7 @@ jobs:
     - name: Checkout code with submodules
       uses: actions/checkout@v3
       with:
-        submodules: 'recursive'  # Automatically checks out submodules
+        submodules: 'recursive'
 
     - name: Set up Python environment
       uses: actions/setup-python@v4
@@ -25,13 +25,18 @@ jobs:
         pip install -r requirements.txt
 
     - name: Configure Git Pull Behavior
-      run: git config pull.rebase false  # Ensures no rebase during pull
+      run: git config pull.rebase false
+
+    - name: Set Git Committer Identity
+      run: |
+        git config --global user.email "you@example.com"
+        git config --global user.name "GitHub Actions"
 
     - name: Update submodule and pull latest changes
       run: |
         git submodule update --init --recursive
         cd aphis-inspection-reports
-        git pull origin main --allow-unrelated-histories --no-rebase  # Allow unrelated histories during pull
+        git pull origin main --allow-unrelated-histories --no-rebase
 
     - name: Ensure the specific file is updated
       run: |
@@ -58,4 +63,5 @@ jobs:
       run: |
         cd scripts
         python append_flagged_rows.py
+
 
