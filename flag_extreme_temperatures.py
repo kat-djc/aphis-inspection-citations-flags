@@ -7,9 +7,11 @@ class RuleBasedClassifier:
     def __init__(self):
         # Positive rules - if satisfied, classify as 1
         self.positive_rules = {
-            'airport_terms': r'\b(airport|airline|aircraft|international terminal|passenger terminal)\b',
-            'transport_terms': r'\b(air transport|flight|air cargo)\b',
-            'document_terms': r'\b(waybill|airway bill|awb)\b'
+            'temperature_value': r'\b(?!180\b)\d+(\.\d+)?\s*(f|degrees|fahrenheit|deg f|celsius)\b',
+            'general_terms': r'\b(climatic|ambient temperature|temperature extremes|atmospheric temperature)\b',
+            'heat_terms': r'\b(extreme heat|heat index|heat warning|excessive heat|hot weather|heat stroke|heat stress)\b',
+            'cold_terms': r'\b(extreme cold|cold temperature|cold weather|low temperature|cold stress|frostbite|hyperthermia|hypothermic)\b',
+            'weather_sources': r'\b(weather service|accuweather|noaa)\b'
         }
         
         # Negative rules - if satisfied, override to 0
@@ -100,9 +102,9 @@ class RuleBasedClassifier:
             'explanation': explanation
         }
 
-# Apply classification to the new_inspections_citations 
-def classify_inspection_narratives(new_inspections_citations):
-   
+# Apply classification to the new_inspections_citations
+def classify_inspection_narratives():
+  
     classifier = RuleBasedClassifier()
     
     # Create result DataFrame with all columns from original plus new classification columns
@@ -112,7 +114,7 @@ def classify_inspection_narratives(new_inspections_citations):
     results = results_df['narrative'].apply(classifier.apply_rules)
     
     # Add classification columns
-    results_df['air_transport_flag'] = results.apply(lambda x: x['classification'])
+    results_df['temperature_flag'] = results.apply(lambda x: x['classification'])
     results_df['classification_explanation'] = results.apply(lambda x: x['explanation'])
     results_df['matched_positive_rules'] = results.apply(lambda x: x['matched_positive'])
     results_df['matched_negative_rules'] = results.apply(lambda x: x['matched_negative'])
@@ -120,28 +122,29 @@ def classify_inspection_narratives(new_inspections_citations):
     return results_df
 
 if __name__ == "__main__":
-    # Load data
-    new_inspections_citations = pd.read_csv('../data/new_rows/new_inspections_citations.csv')
+    # Read the data
+    data_path = "../data/new_rows/new_inspections_citations.csv"
+    new_inspections_citations = pd.read_csv(data_path)
     
-    # Classify
-    classified_df = classify_inspection_narratives(new_inspections_citations)
-
+    # Run classification
+    classified_df = classify_inspection_narratives()
+    
     # Print sanity check
     print("----------------------------------------------------------------------------")
-    print("Sanity Check for 'flag_air_tranport.py':")
+    print("Sanity Check for 'flag_extreme_temperatures.py':")
     print()
     print(f"Total records: {len(classified_df)}")
-    print(f"Records flagged as air transport: {classified_df['air_transport_flag'].sum()}")
-    print(f"Percentage flagged: {(classified_df['air_transport_flag'].mean() * 100):.2f}%")
+    print(f"Records flagged for temperature issues: {classified_df['temperature_flag'].sum()}")
+    print(f"Percentage flagged: {(classified_df['temperature_flag'].mean() * 100):.2f}%")
     print("----------------------------------------------------------------------------")
-
-    # Print a few examples of flagged records
+    
+   # Print a few examples of flagged records
     print("Example Matched Records:")
-    matched_examples = classified_df[classified_df['air_transport_flag'] == 1].head()
+    matched_examples = classified_df[classified_df['temperature_flag'] == 1].head()
     for _, row in matched_examples.iterrows():
         print(f"Narrative: {row['narrative'][:200]}...")  
         print(f"Matched Rules: {row['matched_positive_rules']}")
         print(f"Classification Explanation: {row['classification_explanation']}")
 
     # Write classified_df to intial_flagged
-    classified_df.to_csv('../data/flagged/air_transport/initial_flagged.csv', index=False)
+    classified_df.to_csv('../data/flagged/extreme_temperatures/initial_flagged.csv', index=False)

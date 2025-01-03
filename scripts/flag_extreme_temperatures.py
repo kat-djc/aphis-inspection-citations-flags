@@ -142,7 +142,7 @@ if __name__ == "__main__":
     print("\nExample Matched Records:")
     matched_examples = classified_df[classified_df['temperature_flag'] == 1].head()
     for _, row in matched_examples.iterrows():
-        print(f"\nNarrative: {row['narrative'][:200]}...")  # Show first 200 characters
+        print(f"\nNarrative: {row['narrative'][:200]}...")  
         print(f"Matched Rules: {row['matched_positive_rules']}")
         print(f"Classification Explanation: {row['classification_explanation']}")
 
