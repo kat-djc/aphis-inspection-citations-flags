@@ -132,7 +132,7 @@ if __name__ == "__main__":
     print()
     print(f"Total records: {len(classified_df)}")
     print(f"Records flagged as air transport: {classified_df['air_transport_flag'].sum()}")
-    print(f"Percentage flagged: {(classified_df['air_transport_flag'].mean() * 100):.2f}%")
+    print(f"Percentage flagged: {(classified_df['air_transport_flag'].sum() / len(classified_df) * 100):.2f}%")
     print("----------------------------------------------------------------------------")
 
     # Print a few examples of flagged records
