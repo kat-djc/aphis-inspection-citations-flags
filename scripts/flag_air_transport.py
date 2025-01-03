@@ -121,7 +121,7 @@ def classify_inspection_narratives(new_inspections_citations):
 
 if __name__ == "__main__":
     # Load data
-    new_inspections_citations = pd.read_csv('../data/new_rows/new_inspections_citations.csv')
+    new_inspections_citations = pd.read_csv('../data/flagging_process/new_rows/inspections_citations_new_rows.csv')
     
     # Classify
     classified_df = classify_inspection_narratives(new_inspections_citations)
@@ -144,4 +144,4 @@ if __name__ == "__main__":
         print(f"Classification Explanation: {row['classification_explanation']}")
 
     # Write classified_df to intial_flagged
-    classified_df.to_csv('../data/flagged/air_transport/initial_flagged.csv', index=False)
+    classified_df.to_csv('../data/flagging_process/air_transport/initial_flagged.csv', index=False)

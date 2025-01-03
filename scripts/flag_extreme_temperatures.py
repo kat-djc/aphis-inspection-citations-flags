@@ -123,7 +123,7 @@ def classify_inspection_narratives():
 
 if __name__ == "__main__":
     # Read the data
-    data_path = "../data/new_rows/new_inspections_citations.csv"
+    data_path = "../data/flagging_process/new_rows/inspections_citations_new_rows.csv"
     new_inspections_citations = pd.read_csv(data_path)
     
     # Run classification
@@ -147,4 +147,4 @@ if __name__ == "__main__":
         print(f"Classification Explanation: {row['classification_explanation']}")
 
     # Write classified_df to intial_flagged
-    classified_df.to_csv('../data/flagged/extreme_temperatures/initial_flagged.csv', index=False)
+    classified_df.to_csv('../data/flagging_process/extreme_temperatures/initial_flagged.csv', index=False)
