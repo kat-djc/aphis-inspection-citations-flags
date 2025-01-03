@@ -38,6 +38,7 @@ def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=N
     else:
         # Reload the updated original file after appending
         df_combined = pd.read_csv(original_file_path)
+        print(f"Shape of combined data: {df_combined.shape}")
     
     print(f"Shape of data after appending: {df_combined.shape}")
     print("Ensure the combined dataset matches the expected shape above.")
