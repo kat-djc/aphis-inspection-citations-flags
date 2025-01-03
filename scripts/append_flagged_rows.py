@@ -9,9 +9,9 @@ def main():
     # Combine datasets
     df_combined = pd.concat([df_last_run_inspections_citations, df_inspections_citations_new_rows])
 
-    # Print validation results
+    # Print sanity check
     print("----------------------------------------------------------------------------")
-    print("Sanity check for 'append_flagged_rows.py':")
+    print("Sanity Check for 'append_flagged_rows.py':")
     print()
     print(f"Shape of last run inspections-citations data: {df_last_run_inspections_citations.shape}")
     print(f"Shape of combined dataset: {df_combined.shape}")
