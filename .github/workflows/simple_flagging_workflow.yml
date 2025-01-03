@@ -63,6 +63,9 @@ jobs:
         cd scripts
         python flag_air_transport.py
 
+    - name: Debug file paths
+      run: ls -R ${{ github.workspace }}/data/
+      
     - name: Append new rows for air transport
       run: |
         source venv/bin/activate  # Ensure the virtual environment is activated
