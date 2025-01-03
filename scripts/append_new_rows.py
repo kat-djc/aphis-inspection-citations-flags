@@ -14,6 +14,10 @@ def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=N
     # Load datasets
     df_original = pd.read_csv(original_file_path)
     new_rows = pd.read_csv(new_rows_file_path)
+    print(f"Reading original file from: {original_file_path}")
+    print(f"Reading new rows file from: {new_rows_file_path}")
+    print(f"Combined file path: {combined_file_path}")
+
 
     # Print sanity check
     print("----------------------------------------------------------------------------")
