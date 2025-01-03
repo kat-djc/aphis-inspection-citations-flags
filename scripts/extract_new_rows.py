@@ -41,7 +41,7 @@ def main():
     print(f"Shape of newest inspections-citations: {df_new.shape}")
     print()
     print(f"Shape of extracted new rows: {new_rows.shape}")
-    print(f"Shape of expected results: {df_new.shape[0] + 1}")
+    print(f"Shape of expected results: {df_new.shape}")
     print("Ensure that the output aligns with the expected results.")
     print("----------------------------------------------------------------------------")
 
