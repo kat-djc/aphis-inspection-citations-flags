@@ -131,18 +131,18 @@ if __name__ == "__main__":
     
     # Print sanity check
     print("----------------------------------------------------------------------------")
-    print("\n Sanity Check for 'flag_extreme_temperatures.py':")
+    print("Sanity Check for 'flag_extreme_temperatures.py':")
     print()
     print(f"Total records: {len(classified_df)}")
     print(f"Records flagged for temperature issues: {classified_df['temperature_flag'].sum()}")
-    print(f"Percentage flagged: {(classified_df['temperature_flag'].mean() * 100):.2f}%")
+    print(f"Percentage flagged: {(classified_df['temperature_flag'].sum() / len(classified_df) * 100):.2f}%")
     print("----------------------------------------------------------------------------")
     
    # Print a few examples of flagged records
     print("\nExample Matched Records:")
     matched_examples = classified_df[classified_df['temperature_flag'] == 1].head()
     for _, row in matched_examples.iterrows():
-        print(f"\nNarrative: {row['narrative'][:200]}...")  
+        print(f"Narrative: {row['narrative'][:200]}...")  
         print(f"Matched Rules: {row['matched_positive_rules']}")
         print(f"Classification Explanation: {row['classification_explanation']}")
 
