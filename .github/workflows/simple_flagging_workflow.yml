@@ -73,7 +73,7 @@ jobs:
         python append_new_rows.py \
           --original_file_path ${{ github.workspace }}/data/output/air_transport/inspections_citations_with_air_transport_flags.csv \
           --new_rows_file_path ${{ github.workspace }}/data/flagging_process/air_transport/initial_flagged.csv \
-          --combined_file_path ${{ github.workspace }}/data/output/air_transport/inspections_citations_with_air_transport_flags.csv
+          --combined_file_path ${{ github.workspace }}/data/output/air_transport/combined_inspections_citations_with_air_transport_flags.csv
 
     - name: Append new rows for extreme temperatures
       run: |
@@ -82,15 +82,15 @@ jobs:
         python append_new_rows.py \
           --original_file_path ${{ github.workspace }}/data/output/extreme_temperatures/inspections_citations_with_extreme_temperatures_flags.csv \
           --new_rows_file_path ${{ github.workspace }}/data/flagging_process/extreme_temperatures/initial_flagged.csv \
-          --combined_file_path ${{ github.workspace }}/data/output/extreme_temperatures/inspections_citations_with_extreme_temperatures_flags.csv
+          --combined_file_path ${{ github.workspace }}/data/output/extreme_temperatures/combined_inspections_citations_with_extreme_temperatures_flags.csv
 
     - name: Append new rows for inspections_citations
       run: |
         source venv/bin/activate  # Ensure the virtual environment is activated
         cd scripts
         python append_new_rows.py \
-        python append_new_rows.py \
-        --original_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.csv \
-        --new_rows_file_path ${{ github.workspace }}/data/flagging_process/new_rows/inspections_citations_new_rows.csv \
-        --combined_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.csv 
+          --original_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.csv \
+          --new_rows_file_path ${{ github.workspace }}/data/flagging_process/new_rows/inspections_citations_new_rows.csv \
+          --combined_file_path ${{ github.workspace }}/data/output/combined_inspections_citations_latest.csv
+
 
