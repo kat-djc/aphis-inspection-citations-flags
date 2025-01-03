@@ -18,7 +18,7 @@ def extract_new_rows(original_df, new_df, unique_col=None):
         new_rows = new_df[~new_df[unique_col].isin(original_df[unique_col])]
     else:
         # If no unique column, compare the entire row
-        new_rows = pd.concat([new_df, original_df]).drop_duplicates(keep=False)
+        new_rows = pd.concat([new_df, original_df])
 
     return new_rows
 
