@@ -39,9 +39,9 @@ def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=N
 
 
 def main():
-    # Argument parsing
-    parser = argparse.ArgumentParser(description="Append new rows to the original inspections citations data.")
-    parser.add_argument('original_file_path', type=str, help="Path to the original dataset")
+    
+    parser = argparse.ArgumentParser(description="Update dataset with new rows dataset.")
+    parser.add_argument('original_file_path', type=str, help="Path to the dataset that will be updated with the new rows dataset")
     parser.add_argument('new_rows_file_path', type=str, help="Path to the new rows dataset")
     parser.add_argument('--combined_file_path', type=str, help="Path to the combined dataset (optional)", default=None)
 
