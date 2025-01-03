@@ -1,5 +1,6 @@
 import pandas as pd
 import argparse
+import shutil
 
 def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=None):
     """
@@ -18,7 +19,6 @@ def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=N
     print(f"Reading new rows file from: {new_rows_file_path}")
     print(f"Combined file path: {combined_file_path}")
 
-
     # Print sanity check
     print("----------------------------------------------------------------------------")
     print("Sanity Check for 'append_new_rows.py':")
@@ -26,8 +26,10 @@ def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=N
     print(f"Shape of original dataset: {df_original.shape}")
     print(f"Shape of new rows dataset: {new_rows.shape}")
 
-    # Append new rows to the original dataset
-    new_rows.to_csv(original_file_path, mode='a', index=False, header=False)
+    # Append new rows to the original dataset using a temporary file
+    temp_file = f"{original_file_path}.tmp"
+    new_rows.to_csv(temp_file, mode='a', index=False, header=False)
+    shutil.move(temp_file, original_file_path)
 
     # Load combined data (optional: if combined_file_path is provided, load that as well)
     if combined_file_path:
@@ -43,7 +45,6 @@ def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=N
 
 
 def main():
-    
     parser = argparse.ArgumentParser(description="Update dataset with new rows dataset.")
     parser.add_argument('--original_file_path', type=str, help="Path to the dataset that will be updated with the new rows dataset")
     parser.add_argument('--new_rows_file_path', type=str, help="Path to the new rows dataset")
