@@ -5,7 +5,7 @@ from typing import List, Dict, Union
 
 class RuleBasedClassifier:
     def __init__(self):
-        # Positive rules - if matched, classify as 1
+        # Positive rules - if satisfied, classify as 1
         self.positive_rules = {
             'temperature_value': r'\b(?!180\b)\d+(\.\d+)?\s*(f|degrees|fahrenheit|deg f|celsius)\b',
             'general_terms': r'\b(climatic|ambient temperature|temperature extremes|atmospheric temperature)\b',
@@ -14,7 +14,7 @@ class RuleBasedClassifier:
             'weather_sources': r'\b(weather service|accuweather|noaa)\b'
         }
         
-        # Negative rules - if matched, override to 0
+        # Negative rules - if satisfied, override to 0
         self.negative_rules = {
             'no_adult': r'a responsible adult was not available to accompany aphis officials'
         }
@@ -61,18 +61,18 @@ class RuleBasedClassifier:
                 'explanation': 'Invalid input'
             }
         
-        # Track which rules matched
+        # Track which rules were satisfied
         matched_positive = []
         matched_negative = []
         
-        # First pass: check positive rules
+        # Check positive rules
         is_positive = False
         for rule_name, pattern in self.positive_rules.items():
             if re.search(pattern, text):
                 matched_positive.append(rule_name)
                 is_positive = True
         
-        # If no positive rules matched, return early
+        # If no positive rules were satisfied, return early
         if not is_positive:
             return {
                 'classification': 0,
@@ -81,7 +81,7 @@ class RuleBasedClassifier:
                 'explanation': 'No positive rules matched'
             }
         
-        # Second pass: check negative rules
+        # Check negative rules
         for rule_name, pattern in self.negative_rules.items():
             if re.search(pattern, text):
                 matched_negative.append(rule_name)
@@ -102,9 +102,9 @@ class RuleBasedClassifier:
             'explanation': explanation
         }
 
-# Apply classification to the new_inspections_citations DataFrame
+# Apply classification to the new_inspections_citations
 def classify_inspection_narratives():
-    # Create classifier instance
+  
     classifier = RuleBasedClassifier()
     
     # Create result DataFrame with all columns from original plus new classification columns
@@ -121,7 +121,6 @@ def classify_inspection_narratives():
     
     return results_df
 
-# Run the classification
 if __name__ == "__main__":
     # Read the data
     data_path = "../data/new_rows/new_inspections_citations.csv"
@@ -130,13 +129,16 @@ if __name__ == "__main__":
     # Run classification
     classified_df = classify_inspection_narratives()
     
-    # Display summary statistics
-    print("\nClassification Summary:")
+    # Print sanity check
+    print("----------------------------------------------------------------------------")
+    print("\n Sanity Check for 'flag_extreme_temperatures.py':")
+    print()
     print(f"Total records: {len(classified_df)}")
     print(f"Records flagged for temperature issues: {classified_df['temperature_flag'].sum()}")
     print(f"Percentage flagged: {(classified_df['temperature_flag'].mean() * 100):.2f}%")
+    print("----------------------------------------------------------------------------")
     
-    # Display examples of matched records
+   # Print a few examples of flagged records
     print("\nExample Matched Records:")
     matched_examples = classified_df[classified_df['temperature_flag'] == 1].head()
     for _, row in matched_examples.iterrows():
