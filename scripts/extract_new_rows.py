@@ -37,8 +37,11 @@ def main():
     print("----------------------------------------------------------------------------")
     print("Sanity Check for 'extract_new_rows.py':")
     print()
-    print(f"Shape of extracted new rows: {new_rows.shape}")
+    print(f"Shape of last run's inspections-citations: {df_original.shape}")
+    print(f"Shape of newest inspections-citations: {df_new.shape}")
     print()
+    print(f"Shape of extracted new rows: {new_rows.shape}")
+    print(f"Shape of expected results: {df_new.shape[0] - df_original.shape[0]}")
     print("Ensure that the output aligns with the expected results.")
     print("----------------------------------------------------------------------------")
 
