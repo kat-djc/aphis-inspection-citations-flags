@@ -63,8 +63,8 @@ jobs:
         cd scripts
         python flag_air_transport.py
 
-    - name: Append flagged rows
+    - name: Append new rows
       run: |
         source venv/bin/activate  # Ensure the virtual environment is activated
         cd scripts
-        python append_flagged_rows.py
+        python append_new_rows.py
