@@ -182,7 +182,7 @@ if __name__ == "__main__":
         classified_df = classify_inspection_narratives(new_inspections_citations)
 
         # Write classified_df to initial_flagged
-        output_path = '../data/flagging_process/extreme_temperatures/initial_flagged.csv'
+        output_file = '../data/flagging_process/extreme_temperatures/initial_flagged.csv'
         classified_df.to_csv(output_file, index=False)
         print(f"Classified data saved to {output_file}")
 
