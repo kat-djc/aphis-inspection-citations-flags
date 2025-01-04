@@ -47,8 +47,6 @@ jobs:
         echo "$SCRIPT_OUTPUT"
         # Get the path from the output
         echo "MAIN_OUTPUT_PATH=$(echo "$SCRIPT_OUTPUT" | grep "Generated file path:" | sed 's/Generated file path: //')" >> $GITHUB_ENV
-        # Debug: Print the captured path
-        echo "Debug - Captured path: $MAIN_OUTPUT_PATH"
 
     - name: Flag extreme temperatures
       run: |
