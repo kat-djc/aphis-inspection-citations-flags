@@ -41,12 +41,17 @@ jobs:
       run: |
         source venv/bin/activate
         cd scripts
-        # Run the script and save output to a variable
-        SCRIPT_OUTPUT=$(python extract_new_rows.py)
-        # Show the output in logs
-        echo "$SCRIPT_OUTPUT"
-        # Get the path from the output
-        echo "MAIN_OUTPUT_PATH=$(echo "$SCRIPT_OUTPUT" | grep "Generated file path:" | sed 's/Generated file path: //')" >> $GITHUB_ENV
+        # Run the script and capture output
+        python extract_new_rows.py > result.txt
+        # Check if the result is empty
+        NEW_ROWS=$(tail -n 1 result.txt)
+        if [[ "$NEW_ROWS" == "No new data" ]]; then
+          echo "No new data. All flagged datasets are up to date."
+          exit 0  # Stop the entire workflow if no new data
+        fi
+        # Extract the file path for new rows
+        NEW_PATH=$(grep "Generated file path:" result.txt | sed 's/Generated file path: //')
+        echo "MAIN_OUTPUT_PATH=$NEW_PATH" >> $GITHUB_ENV
 
     - name: Flag extreme temperatures
       run: |
