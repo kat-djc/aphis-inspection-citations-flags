@@ -51,6 +51,7 @@ jobs:
         NEW_ROWS=$(echo "$SCRIPT_OUTPUT" | tail -n 1)
         if [[ "$NEW_ROWS" == "No new data" ]]; then
           echo "No new data. All flagged datasets are up to date."
+          echo "NO_NEW_DATA=true" >> $GITHUB_ENV
           exit 0  # Stop the entire workflow if no new data
         fi
         
@@ -58,19 +59,23 @@ jobs:
         NEW_PATH=$(echo "$SCRIPT_OUTPUT" | grep "Generated file path:" | sed 's/Generated file path: //')
         echo "MAIN_OUTPUT_PATH=$NEW_PATH" >> $GITHUB_ENV
 
+
     - name: Flag extreme temperatures
+      if: ${{ env.NO_NEW_DATA != 'true' }}
       run: |
         source venv/bin/activate
         cd scripts
         python flag_extreme_temperatures.py
 
     - name: Flag air transportation issues
+      if: ${{ env.NO_NEW_DATA != 'true' }}
       run: |
         source venv/bin/activate
         cd scripts
         python flag_air_transport.py
 
     - name: Append new rows for air transport
+      if: ${{ env.NO_NEW_DATA != 'true' }}
       run: |
         source venv/bin/activate
         cd scripts
@@ -80,6 +85,7 @@ jobs:
           --combined_file_path ${{ github.workspace }}/data/output/air_transport/inspections_citations_with_air_transport_flags.csv
 
     - name: Append new rows for extreme temperatures
+      if: ${{ env.NO_NEW_DATA != 'true' }}
       run: |
         source venv/bin/activate
         cd scripts
@@ -89,11 +95,13 @@ jobs:
           --combined_file_path ${{ github.workspace }}/data/output/extreme_temperatures/inspections_citations_with_extreme_temperatures_flags.csv
 
     - name: Debug output path
+      if: ${{ env.NO_NEW_DATA != 'true' }}
       run: |
         echo "MAIN_OUTPUT_PATH value is: $MAIN_OUTPUT_PATH"
         ls -l "$MAIN_OUTPUT_PATH" || echo "File not found at $MAIN_OUTPUT_PATH"
         
     - name: Append new rows for inspections_citations
+      if: ${{ env.NO_NEW_DATA != 'true' }}
       run: |
         source venv/bin/activate
         cd scripts
@@ -103,6 +111,7 @@ jobs:
           --combined_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.csv
 
     - name: Commit and push changes
+      if: ${{ env.NO_NEW_DATA != 'true' }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
