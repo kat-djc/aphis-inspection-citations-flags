@@ -35,22 +35,27 @@ jobs:
         cd aphis-inspection-reports
         git fetch origin
         git checkout origin/main -- data/combined/inspections-citations.csv
-
+    
     - name: Extract new rows
       id: extract_new_rows
       run: |
         source venv/bin/activate
         cd scripts
-        # Run the script and capture output
-        python extract_new_rows.py > result.txt
+        # Run the script and capture both stdout and stderr
+        SCRIPT_OUTPUT=$(python extract_new_rows.py)
+        
+        # Print the output from the script to the log
+        echo "$SCRIPT_OUTPUT"
+        
         # Check if the result is empty
-        NEW_ROWS=$(tail -n 1 result.txt)
+        NEW_ROWS=$(echo "$SCRIPT_OUTPUT" | tail -n 1)
         if [[ "$NEW_ROWS" == "No new data" ]]; then
           echo "No new data. All flagged datasets are up to date."
           exit 0  # Stop the entire workflow if no new data
         fi
+        
         # Extract the file path for new rows
-        NEW_PATH=$(grep "Generated file path:" result.txt | sed 's/Generated file path: //')
+        NEW_PATH=$(echo "$SCRIPT_OUTPUT" | grep "Generated file path:" | sed 's/Generated file path: //')
         echo "MAIN_OUTPUT_PATH=$NEW_PATH" >> $GITHUB_ENV
 
     - name: Flag extreme temperatures
