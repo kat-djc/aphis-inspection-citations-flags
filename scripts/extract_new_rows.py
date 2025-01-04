@@ -41,7 +41,7 @@ def main():
     
     # Print the generated file path
     print(f"Generated file path: {new_rows_file_path}")
-    
+
     # Save new rows to a timestamped CSV file
     new_rows.to_csv(new_rows_file_path, index=False)
 
