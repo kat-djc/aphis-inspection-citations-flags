@@ -42,9 +42,8 @@ jobs:
         source venv/bin/activate
         cd scripts
         python extract_new_rows.py
-        OUTPUT_PATH=$(tail -n 1 output.log | sed -n 's/Generated file path: //p')
-        echo "OUTPUT_PATH=$OUTPUT_PATH" >> $GITHUB_ENV
-
+        echo "MAIN_OUTPUT_PATH=$(tail -n 3 output.log | sed -n 's/Generated file path: //p')" >> $GITHUB_ENV
+        
     - name: Debug file paths
       run: ls -R ${{ github.workspace }}/data/
 
