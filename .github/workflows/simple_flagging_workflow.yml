@@ -43,7 +43,7 @@ jobs:
         cd scripts
         python extract_new_rows.py
         OUTPUT_PATH=$(tail -n 1 output.log | sed -n 's/Generated file path: //p')
-        echo "::set-output name=output_path::$OUTPUT_PATH"
+        echo "OUTPUT_PATH=$OUTPUT_PATH" >> $GITHUB_ENV
 
     - name: Debug file paths
       run: ls -R ${{ github.workspace }}/data/
@@ -84,6 +84,5 @@ jobs:
         cd scripts
         python append_new_rows.py \
           --original_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.csv \
-          --new_rows_file_path ${{ steps.generate_timestamped_new_rows_file.outputs.output_path }} \
+          --new_rows_file_path "$OUTPUT_PATH" \
           --combined_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.csv
-
