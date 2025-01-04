@@ -91,3 +91,20 @@ jobs:
           --original_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.csv \
           --new_rows_file_path "$MAIN_OUTPUT_PATH" \
           --combined_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.csv
+<<<<<<< HEAD
+=======
+
+    - name: Commit and push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/kat-djc/aphis-inspection-citations-flags.git
+        git add data/output/air_transport/inspections_citations_with_air_transport_flags.csv
+        git add data/output/extreme_temperatures/inspections_citations_with_extreme_temperatures_flags.csv
+        git add data/output/inspections_citations_latest.csv
+        git add data/flagging_process/new_rows/*
+        git commit -m "Update flagged data [skip ci]" || echo "No changes to commit"
+        git push origin main
+>>>>>>> cc130b9cd2fa16059b6a127f9cd4d4c92e593620
