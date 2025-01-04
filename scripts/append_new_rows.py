@@ -29,25 +29,21 @@ def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=N
 
         # Check that columns match 
         if not df_original.empty and list(df_original.columns) != list(new_rows.columns):
-                raise ValueError("Column mismatch between df_original dataset and new_rows dataset.")
+            raise ValueError("Column mismatch between df_original dataset and new_rows dataset.")
 
-        # Append new rows to the original dataset using a temporary file
+        # Append new rows to the original dataset
         temp_file = f"{original_file_path}.tmp"
-        new_rows.to_csv(temp_file, mode='a', index=False, header=False)
+        new_rows.to_csv(temp_file, mode='a', index=False, header=(df_original.empty))
         shutil.move(temp_file, original_file_path)
 
-        # Load combined data (optional: if combined_file_path is provided, load that as well)
-        if combined_file_path:
-            df_combined = pd.read_csv(combined_file_path)
-            print(f"Shape of combined data: {df_combined.shape}")
-        else:
-            # Reload the updated original file after appending
-            df_combined = pd.read_csv(original_file_path)
-            print(f"Shape of combined data: {df_combined.shape}")
-        
-        print(f"Shape of data after appending: {df_combined.shape}")
-        print("Ensure the combined dataset matches the expected shape above.")
+        # Reload the updated dataset for verification
+        df_combined = pd.read_csv(original_file_path)
+        print(f"Shape of combined dataset after appending: {df_combined.shape}")
+
         print("----------------------------------------------------------------------------")
+        print("Appending operation completed successfully.")
+        print("----------------------------------------------------------------------------")
+
 
     except Exception as e:
         # Log the error details
