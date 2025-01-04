@@ -31,6 +31,14 @@ def main():
     # Extract new rows
     new_rows = extract_new_rows(df_original, df_new)
 
+    # Print sanity check
+    print("----------------------------------------------------------------------------")
+    print("Sanity Check for 'extract_new_rows.py':")
+    print()
+    print(f"Shape of inspections_citations_latest: {df_original.shape}")
+    print(f"Shape of inspections-citations from APHIS: {df_new.shape}")
+    print(f"Shape of extracted new rows: {new_rows.shape}")
+
     # Check if there are new rows
     if new_rows.shape[0] == 0:
         print("No new data. All flagged datasets are up to date.")
@@ -46,14 +54,7 @@ def main():
     # Save new rows to a timestamped CSV file
     new_rows.to_csv(new_rows_file_path, index=False)
 
-    # Print sanity check
-    print("----------------------------------------------------------------------------")
-    print("Sanity Check for 'extract_new_rows.py':")
     print()
-    print(f"Shape of inspections_citations_latest: {df_original.shape}")
-    print(f"Shape of inspections-citations from APHIS: {df_new.shape}")
-    print()
-    print(f"Shape of extracted new rows: {new_rows.shape}")
     print(f"New rows saved to: {new_rows_file_path}")
     print("----------------------------------------------------------------------------")
 
