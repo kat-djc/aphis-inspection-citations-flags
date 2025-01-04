@@ -115,7 +115,7 @@ def classify_inspection_narratives(new_inspections_citations):
 
 def get_latest_file(directory: str, prefix: str, extension: str) -> str:
     """
-    Find the latest file in a directory matching a prefix and extension.
+    Find the latest file in a directory matching a prefix and extension, with debugging output.
 
     Args:
         directory: Directory to search
@@ -125,14 +125,21 @@ def get_latest_file(directory: str, prefix: str, extension: str) -> str:
     Returns:
         Path to the latest matching file
     """
+    print(f"Looking for files in directory: {directory}")
+    print(f"Prefix: {prefix}, Extension: {extension}")
+    
     files = [
         os.path.join(directory, f) for f in os.listdir(directory)
         if f.startswith(prefix) and f.endswith(extension)
     ]
+    print("Matching files found:", files)
+
     if not files:
         raise FileNotFoundError(f"No files found with prefix '{prefix}' and extension '{extension}' in '{directory}'.")
 
-    return max(files, key=os.path.getmtime)
+    latest_file = max(files, key=os.path.getmtime)
+    print("Latest file selected:", latest_file)
+    return latest_file
 
 if __name__ == "__main__":
     try:
