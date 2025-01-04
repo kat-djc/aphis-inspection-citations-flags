@@ -154,7 +154,7 @@ if __name__ == "__main__":
         # Locate the latest file with a timestamp
         directory = '../data/flagging_process/new_rows'
         pattern = 'inspections_citations_new_rows_*.csv'
-        latest_file = get_latest_file(directory, pattern)
+        latest_file = get_latest_file(directory, pattern, '.csv')
         
         print(f"Reading latest file: {latest_file}")
         # Load the latest data

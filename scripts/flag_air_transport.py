@@ -141,7 +141,7 @@ if __name__ == "__main__":
         pattern = 'inspections_citations_new_rows_*.csv'
 
         try:
-            latest_file = get_latest_file(directory, pattern)
+            latest_file = get_latest_file(directory, pattern, '.csv')
         except FileNotFoundError as e:
             print(f"No new files to process: {e}")
             exit(1)
