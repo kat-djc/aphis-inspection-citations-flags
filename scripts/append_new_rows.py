@@ -34,15 +34,12 @@ def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=N
         # Append new rows to the original dataset
         temp_file = f"{original_file_path}.tmp"
         new_rows.to_csv(temp_file, mode='a', index=False, header=(df_original.empty))
-<<<<<<< HEAD
 
         # Print the shape of temp_file before moving it to original file path
         temp_df = pd.read_csv(temp_file)  # Read the temp file to get the shape
         print(f"Shape of temp_file before moving: {temp_df.shape}")
 
         # Move the temp file to the original file path
-=======
->>>>>>> cc130b9cd2fa16059b6a127f9cd4d4c92e593620
         shutil.move(temp_file, original_file_path)
 
         # Reload the updated dataset for verification
