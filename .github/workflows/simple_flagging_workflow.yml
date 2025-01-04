@@ -41,12 +41,14 @@ jobs:
       run: |
         source venv/bin/activate
         cd scripts
-        # Run the script and capture output while also showing it in the logs
-        SCRIPT_OUTPUT=$(python extract_new_rows.py | tee /dev/tty)
-        # Get the last line containing "Generated file path:"
-        echo "MAIN_OUTPUT_PATH=$(echo "$SCRIPT_OUTPUT" | grep "Generated file path:" | tail -n1 | sed 's/Generated file path: //')" >> $GITHUB_ENV
-        # Debug: Print the path we captured
-        echo "Captured path: $MAIN_OUTPUT_PATH"
+        # Run the script and save output to a variable
+        SCRIPT_OUTPUT=$(python extract_new_rows.py)
+        # Show the output in logs
+        echo "$SCRIPT_OUTPUT"
+        # Get the path from the output
+        echo "MAIN_OUTPUT_PATH=$(echo "$SCRIPT_OUTPUT" | grep "Generated file path:" | sed 's/Generated file path: //')" >> $GITHUB_ENV
+        # Debug: Print the captured path
+        echo "Debug - Captured path: $MAIN_OUTPUT_PATH"
 
     - name: Flag extreme temperatures
       run: |
