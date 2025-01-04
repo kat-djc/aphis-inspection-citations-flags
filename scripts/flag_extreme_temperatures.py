@@ -154,6 +154,7 @@ def get_latest_file(directory: str, prefix: str, extension: str) -> str:
 
     latest_file = max(files, key=os.path.getmtime)
     print("Latest file selected:", latest_file)
+    print()
     return latest_file
 
 
@@ -167,13 +168,16 @@ if __name__ == "__main__":
             print(f"Contents of the directory '{directory}':")
             for file_name in os.listdir(directory):
                 print(file_name)
+                print()
         else:
             print(f"The directory '{directory}' does not exist.")
+            print()
 
         prefix = 'inspections_citations_new_rows_'
         extension = '.csv'
         latest_file = get_latest_file(directory, prefix, extension)
         print(f"Reading latest file: {latest_file}")
+        print()
 
         # Load the latest data
         new_inspections_citations = pd.read_csv(latest_file)

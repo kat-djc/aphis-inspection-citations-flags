@@ -139,6 +139,7 @@ def get_latest_file(directory: str, prefix: str, extension: str) -> str:
 
     latest_file = max(files, key=os.path.getmtime)
     print("Latest file selected:", latest_file)
+    print()
     return latest_file
 
 if __name__ == "__main__":
@@ -151,8 +152,10 @@ if __name__ == "__main__":
             print(f"Contents of the directory '{directory}':")
             for file_name in os.listdir(directory):
                 print(file_name)
+                print()
         else:
             print(f"The directory '{directory}' does not exist.")
+            print()
 
         prefix = 'inspections_citations_new_rows_'
         extension = '.csv'
@@ -164,10 +167,6 @@ if __name__ == "__main__":
 
         # Classify
         classified_df = classify_inspection_narratives(new_inspections_citations)
-
-        # Ensure output directory exists
-        output_dir = '../data/flagging_process/air_transport'
-        os.makedirs(output_dir, exist_ok=True)
 
         # Write classified_df to intial_flagged
         output_file = '../data/flagging_process/air_transport/initial_flagged.csv'
