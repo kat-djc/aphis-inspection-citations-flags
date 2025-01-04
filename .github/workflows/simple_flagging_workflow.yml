@@ -37,12 +37,14 @@ jobs:
         git checkout origin/main -- data/combined/inspections-citations.csv
 
     - name: Extract new rows
-      id: generate_timestamped_new_rows_file
+      id: extract_new_rows
       run: |
         source venv/bin/activate
         cd scripts
-        python extract_new_rows.py
-        echo "MAIN_OUTPUT_PATH=$(tail -n 3 output.log | sed -n 's/Generated file path: //p')" >> $GITHUB_ENV
+        # Capture the output of the Python script directly into a variable
+        SCRIPT_OUTPUT=$(python extract_new_rows.py)
+        # Extract the path from the first line of output
+        echo "OUTPUT_PATH=$(echo "$SCRIPT_OUTPUT" | grep "Generated file path:" | sed 's/Generated file path: //')" >> $GITHUB_ENV
         
     - name: Debug file paths
       run: ls -R ${{ github.workspace }}/data/
