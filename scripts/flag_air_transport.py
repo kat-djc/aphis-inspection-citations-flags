@@ -1,6 +1,8 @@
 import pandas as pd
 import re
 from typing import List, Dict, Union
+import os
+import glob
 
 
 class RuleBasedClassifier:
@@ -18,24 +20,10 @@ class RuleBasedClassifier:
         }
     
     def preprocess_text(self, text: str) -> str:
-        """
-        Preprocess text by lowercasing and normalizing spaces.
-        
-        Args:
-            text: Input text to preprocess
-            
-        Returns:
-            Preprocessed text
-        """
         if not isinstance(text, str):
             return ""
-        
-        # Convert to lowercase
         text = text.lower()
-        
-        # Normalize spaces (split and rejoin to remove multiple spaces)
         text = ' '.join(text.split())
-        
         return text
     
     def apply_rules(self, text: str) -> Dict[str, Union[int, List[str]]]:
@@ -100,48 +88,87 @@ class RuleBasedClassifier:
             'explanation': explanation
         }
 
-# Apply classification to the new_inspections_citations 
 def classify_inspection_narratives(new_inspections_citations):
-   
+    """
+    Apply classification rules to a DataFrame of inspection narratives.
+
+    Args:
+        new_inspections_citations: DataFrame containing narratives to classify
+
+    Returns:
+        DataFrame with classification results added
+    """
     classifier = RuleBasedClassifier()
-    
+
     # Create result DataFrame with all columns from original plus new classification columns
     results_df = new_inspections_citations.copy()
-    
+
     # Apply classification to each row
     results = results_df['narrative'].apply(classifier.apply_rules)
-    
-    # Add classification columns
+
     results_df['air_transport_flag'] = results.apply(lambda x: x['classification'])
     results_df['classification_explanation'] = results.apply(lambda x: x['explanation'])
     results_df['matched_positive_rules'] = results.apply(lambda x: x['matched_positive'])
     results_df['matched_negative_rules'] = results.apply(lambda x: x['matched_negative'])
-    
     return results_df
 
+
+def get_latest_file(directory: str, prefix: str, extension: str) -> str:
+    """
+    Find the latest file in a directory matching a prefix and extension.
+
+    Args:
+        directory: Directory to search
+        prefix: File prefix to match
+        extension: File extension to match
+
+    Returns:
+        Path to the latest matching file
+    """
+    files = [
+        os.path.join(directory, f) for f in os.listdir(directory)
+        if f.startswith(prefix) and f.endswith(extension)
+    ]
+    if not files:
+        raise FileNotFoundError(f"No files found with prefix '{prefix}' and extension '{extension}' in '{directory}'.")
+
+    return max(files, key=os.path.getmtime)
+
 if __name__ == "__main__":
-    # Load data
-    new_inspections_citations = pd.read_csv('../data/flagging_process/new_rows/inspections_citations_new_rows.csv')
-    
-    # Classify
-    classified_df = classify_inspection_narratives(new_inspections_citations)
+    try:
+        # Locate the latest file with a timestamp
+        directory = '../data/flagging_process/new_rows'
+        pattern = 'inspections_citations_new_rows_*.csv'
+        latest_file = get_latest_file(directory, pattern)
+        
+        print(f"Reading latest file: {latest_file}")
+        # Load the latest data
+        new_inspections_citations = pd.read_csv(latest_file)
 
-    # Print sanity check
-    print("----------------------------------------------------------------------------")
-    print("Sanity Check for 'flag_air_tranport.py':")
-    print()
-    print(f"Total records: {len(classified_df)}")
-    print(f"Records flagged as air transport: {classified_df['air_transport_flag'].sum()}")
-    print(f"Percentage flagged: {(classified_df['air_transport_flag'].sum() / len(classified_df) * 100):.2f}%")
-    print("----------------------------------------------------------------------------")
+        # Classify
+        classified_df = classify_inspection_narratives(new_inspections_citations)
 
-    # Print a few examples of flagged records
-    print("Example Matched Records:")
-    matched_examples = classified_df[classified_df['air_transport_flag'] == 1].head()
-    for _, row in matched_examples.iterrows():
-        print(f"Narrative: {row['narrative'][:200]}...")  
-        print(f"Matched Rules: {row['matched_positive_rules']}")
-        print(f"Classification Explanation: {row['classification_explanation']}")
+        # Print sanity check
+        print("----------------------------------------------------------------------------")
+        print("Sanity Check for 'flag_air_tranport.py':")
+        print()
+        print(f"Total records: {len(classified_df)}")
+        print(f"Records flagged as air transport: {classified_df['air_transport_flag'].sum()}")
+        print(f"Percentage flagged: {(classified_df['air_transport_flag'].sum() / len(classified_df) * 100):.2f}%")
+        print("----------------------------------------------------------------------------")
 
-    # Write classified_df to intial_flagged
-    classified_df.to_csv('../data/flagging_process/air_transport/initial_flagged.csv', index=False)
+        # Print a few examples of flagged records
+        print("Example Matched Records:")
+        matched_examples = classified_df[classified_df['air_transport_flag'] == 1].head()
+        for _, row in matched_examples.iterrows():
+            print(f"Narrative: {row['narrative'][:200]}...")  
+            print(f"Matched Rules: {row['matched_positive_rules']}")
+            print(f"Classification Explanation: {row['classification_explanation']}")
+
+        # Write classified_df to intial_flagged
+        output_file = '../data/flagging_process/air_transport/initial_flagged.csv'
+        classified_df.to_csv(output_file, index=False)
+        print(f"Classified data saved to {output_file}")
+
+    except Exception as e:
+        print(f"Error: {e}")
