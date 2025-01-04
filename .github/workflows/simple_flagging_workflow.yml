@@ -37,16 +37,16 @@ jobs:
         git checkout origin/main -- data/combined/inspections-citations.csv
 
     - name: Extract new rows
-      id: generate_timestamped_new_rows_file
+      id: extract_new_rows
       run: |
         source venv/bin/activate
         cd scripts
-        python extract_new_rows.py
-        OUTPUT_PATH=$(tail -n 1 output.log | sed -n 's/Generated file path: //p')
-        echo "OUTPUT_PATH=$OUTPUT_PATH" >> $GITHUB_ENV
-
-    - name: Debug file paths
-      run: ls -R ${{ github.workspace }}/data/
+        # Run the script and save output to a variable
+        SCRIPT_OUTPUT=$(python extract_new_rows.py)
+        # Show the output in logs
+        echo "$SCRIPT_OUTPUT"
+        # Get the path from the output
+        echo "MAIN_OUTPUT_PATH=$(echo "$SCRIPT_OUTPUT" | grep "Generated file path:" | sed 's/Generated file path: //')" >> $GITHUB_ENV
 
     - name: Flag extreme temperatures
       run: |
@@ -78,6 +78,11 @@ jobs:
           --new_rows_file_path ${{ github.workspace }}/data/flagging_process/extreme_temperatures/initial_flagged.csv \
           --combined_file_path ${{ github.workspace }}/data/output/extreme_temperatures/inspections_citations_with_extreme_temperatures_flags.csv
 
+    - name: Debug output path
+      run: |
+        echo "MAIN_OUTPUT_PATH value is: $MAIN_OUTPUT_PATH"
+        ls -l "$MAIN_OUTPUT_PATH" || echo "File not found at $MAIN_OUTPUT_PATH"
+        
     - name: Append new rows for inspections_citations
       run: |
         source venv/bin/activate
