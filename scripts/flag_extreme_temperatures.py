@@ -152,7 +152,7 @@ def get_latest_file(directory: str, prefix: str, extension: str) -> str:
 if __name__ == "__main__":
     try: 
         # Locate the latest file with a timestamp
-        directory = '../data/flagging_process/new_rows'
+        directory = '../data/flagging_process/new_rows/'
         pattern = 'inspections_citations_new_rows_*.csv'
         latest_file = get_latest_file(directory, pattern, '.csv')
         
