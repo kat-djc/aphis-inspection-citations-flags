@@ -161,6 +161,17 @@ if __name__ == "__main__":
     try: 
         # Locate the latest file with a timestamp
         directory = '../data/flagging_process/new_rows/'
+
+        
+        # Check if the directory exists and print its contents
+        if os.path.exists(directory):
+            print(f"Contents of the directory '{directory}':")
+            for file_name in os.listdir(directory):
+                print(file_name)
+        else:
+            print(f"The directory '{directory}' does not exist.")
+
+
         pattern = 'inspections_citations_new_rows_*'
         latest_file = get_latest_file(directory, pattern, '.csv')
         
