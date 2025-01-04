@@ -121,7 +121,7 @@ def classify_inspection_narratives(new_inspections_citations):
     results = results_df['narrative'].apply(classifier.apply_rules)
 
     # Add classification columns
-    results_df['temperature_flag'] = results.apply(lambda x: x['classification'])
+    results_df['extreme_temperature_flag'] = results.apply(lambda x: x['classification'])
     results_df['classification_explanation'] = results.apply(lambda x: x['explanation'])
     results_df['matched_positive_rules'] = results.apply(lambda x: x['matched_positive'])
     results_df['matched_negative_rules'] = results.apply(lambda x: x['matched_negative'])
