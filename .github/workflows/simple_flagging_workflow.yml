@@ -84,5 +84,5 @@ jobs:
         cd scripts
         python append_new_rows.py \
           --original_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.csv \
-          --new_rows_file_path "$OUTPUT_PATH" \
+          --new_rows_file_path "$MAIN_OUTPUT_PATH" \
           --combined_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.csv
