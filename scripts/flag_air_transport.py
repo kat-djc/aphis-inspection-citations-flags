@@ -139,8 +139,13 @@ if __name__ == "__main__":
         # Locate the latest file with a timestamp
         directory = '../data/flagging_process/new_rows'
         pattern = 'inspections_citations_new_rows_*.csv'
-        latest_file = get_latest_file(directory, pattern)
-        
+
+        try:
+            latest_file = get_latest_file(directory, pattern)
+        except FileNotFoundError as e:
+            print(f"No new files to process: {e}")
+            exit(1)
+    
         print(f"Reading latest file: {latest_file}")
         # Load the latest data
         new_inspections_citations = pd.read_csv(latest_file)
@@ -148,7 +153,16 @@ if __name__ == "__main__":
         # Classify
         classified_df = classify_inspection_narratives(new_inspections_citations)
 
-        # Print sanity check
+        # Ensure output directory exists
+        output_dir = '../data/flagging_process/air_transport'
+        os.makedirs(output_dir, exist_ok=True)
+
+        # Write classified_df to intial_flagged
+        output_file = '../data/flagging_process/air_transport/initial_flagged.csv'
+        classified_df.to_csv(output_file, index=False)
+        print(f"Classified data saved to {output_file}")
+
+         # Print sanity check
         print("----------------------------------------------------------------------------")
         print("Sanity Check for 'flag_air_tranport.py':")
         print()
@@ -164,11 +178,6 @@ if __name__ == "__main__":
             print(f"Narrative: {row['narrative'][:200]}...")  
             print(f"Matched Rules: {row['matched_positive_rules']}")
             print(f"Classification Explanation: {row['classification_explanation']}")
-
-        # Write classified_df to intial_flagged
-        output_file = '../data/flagging_process/air_transport/initial_flagged.csv'
-        classified_df.to_csv(output_file, index=False)
-        print(f"Classified data saved to {output_file}")
 
     except Exception as e:
         print(f"Error: {e}")
