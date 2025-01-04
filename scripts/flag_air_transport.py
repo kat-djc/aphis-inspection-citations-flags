@@ -144,16 +144,21 @@ def get_latest_file(directory: str, prefix: str, extension: str) -> str:
 if __name__ == "__main__":
     try:
         # Locate the latest file with a timestamp
-        directory = '../data/flagging_process/new_rows'
-        pattern = 'inspections_citations_new_rows_*.csv'
+        directory = '../data/flagging_process/new_rows/'
 
-        try:
-            latest_file = get_latest_file(directory, pattern, '.csv')
-        except FileNotFoundError as e:
-            print(f"No new files to process: {e}")
-            exit(1)
-    
+         # Check if the directory exists and print its contents
+        if os.path.exists(directory):
+            print(f"Contents of the directory '{directory}':")
+            for file_name in os.listdir(directory):
+                print(file_name)
+        else:
+            print(f"The directory '{directory}' does not exist.")
+
+        prefix = 'inspections_citations_new_rows_'
+        extension = '.csv'
+        latest_file = get_latest_file(directory, prefix, extension)
         print(f"Reading latest file: {latest_file}")
+
         # Load the latest data
         new_inspections_citations = pd.read_csv(latest_file)
 

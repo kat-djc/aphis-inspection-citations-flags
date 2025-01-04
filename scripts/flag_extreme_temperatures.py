@@ -162,7 +162,6 @@ if __name__ == "__main__":
         # Locate the latest file with a timestamp
         directory = '../data/flagging_process/new_rows/'
 
-        
         # Check if the directory exists and print its contents
         if os.path.exists(directory):
             print(f"Contents of the directory '{directory}':")
@@ -171,16 +170,21 @@ if __name__ == "__main__":
         else:
             print(f"The directory '{directory}' does not exist.")
 
-
-        pattern = 'inspections_citations_new_rows_*'
-        latest_file = get_latest_file(directory, pattern, '.csv')
-        
+        prefix = 'inspections_citations_new_rows_'
+        extension = '.csv'
+        latest_file = get_latest_file(directory, prefix, extension)
         print(f"Reading latest file: {latest_file}")
+
         # Load the latest data
         new_inspections_citations = pd.read_csv(latest_file)
 
         # Classify
         classified_df = classify_inspection_narratives(new_inspections_citations)
+
+        # Write classified_df to initial_flagged
+        output_path = '../data/flagging_process/extreme_temperatures/initial_flagged.csv'
+        classified_df.to_csv(output_file, index=False)
+        print(f"Classified data saved to {output_file}")
 
         # Print sanity check
         print("----------------------------------------------------------------------------")
@@ -198,10 +202,6 @@ if __name__ == "__main__":
             print(f"Narrative: {row['narrative'][:200]}...")
             print(f"Matched Rules: {row['matched_positive_rules']}")
             print(f"Classification Explanation: {row['classification_explanation']}")
-
-        # Write classified_df to initial_flagged
-        output_path = '../data/flagging_process/extreme_temperatures/initial_flagged.csv'
-        classified_df.to_csv(output_path, index=False)
 
     except Exception as e:
         print(f"Error: {e}")
