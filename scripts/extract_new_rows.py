@@ -38,7 +38,10 @@ def main():
     # Generate a timestamp for the filename
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     new_rows_file_path = f"../data/flagging_process/new_rows/inspections_citations_new_rows_{timestamp}.csv"
-
+    
+    # Print the generated file path
+    print(f"Generated file path: {new_rows_file_path}")
+    
     # Save new rows to a timestamped CSV file
     new_rows.to_csv(new_rows_file_path, index=False)
 
