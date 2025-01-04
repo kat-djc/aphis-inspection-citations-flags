@@ -32,7 +32,7 @@ def main():
     new_rows = extract_new_rows(df_original, df_new)
 
     # Check if there are new rows
-    if new_rows.empty:
+    if new_rows.shape[0] == 0:
         print("No new data. All flagged datasets are up to date.")
         sys.exit(0)  # Exit the script with a success status
     
