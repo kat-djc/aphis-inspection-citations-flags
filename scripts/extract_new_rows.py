@@ -1,26 +1,23 @@
 import pandas as pd
 from datetime import datetime
 
-def extract_new_rows(original_df, new_df, unique_col=None):
+import pandas as pd
+
+def extract_new_rows(original_df, new_df):
     """
-    Extract new rows from new_df that are not in original_df.
+    Extract new rows from new_df that are not in original_df, assuming that the new rows
+    are at the bottom of the new_df.
 
     Parameters:
     original_df (pd.DataFrame): The original dataframe.
-    new_df (pd.DataFrame): The new dataframe to compare with.
-    unique_col (str, optional): The column that uniquely identifies each row (default is None).
+    new_df (pd.DataFrame): The refreshed dataframe, where new rows are at the bottom.
     
     Returns:
     pd.DataFrame: DataFrame containing the new rows.
     """
-    # If unique_col is provided, compare based on that column
-    if unique_col:
-        # Use a left anti join to get rows from new_df that are not in original_df
-        new_rows = new_df[~new_df[unique_col].isin(original_df[unique_col])]
-    else:
-        # If no unique column, compare the entire row
-        new_rows = pd.concat([new_df, original_df])
-
+    # Find the difference in the number of rows
+    new_rows = new_df.iloc[len(original_df):]
+    
     return new_rows
 
 def main():
