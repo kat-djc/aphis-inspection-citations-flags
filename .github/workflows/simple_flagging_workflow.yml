@@ -41,10 +41,8 @@ jobs:
       run: |
         source venv/bin/activate
         cd scripts
-        # Capture the output of the Python script directly into a variable
-        SCRIPT_OUTPUT=$(python extract_new_rows.py)
-        # Extract the path from the first line of output
-        echo "OUTPUT_PATH=$(echo "$SCRIPT_OUTPUT" | grep "Generated file path:" | sed 's/Generated file path: //')" >> $GITHUB_ENV
+        python extract_new_rows.py
+        echo "MAIN_OUTPUT_PATH=$(tail -n 3 output.log | sed -n 's/Generated file path: //p')" >> $GITHUB_ENV
         
     - name: Debug file paths
       run: ls -R ${{ github.workspace }}/data/
