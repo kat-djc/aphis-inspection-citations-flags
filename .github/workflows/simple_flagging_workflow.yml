@@ -47,9 +47,8 @@ jobs:
         # Print the output from the script to the log
         echo "$SCRIPT_OUTPUT"
         
-        # Check if the result is empty
-        NEW_ROWS=$(echo "$SCRIPT_OUTPUT" | tail -n 1)
-        if [[ "$NEW_ROWS" == "No new data" ]]; then
+        # Check if the result contains "No new data"
+        if echo "$SCRIPT_OUTPUT" | grep -q "No new data"; then
           echo "No new data. All flagged datasets are up to date."
           echo "NO_NEW_DATA=true" >> $GITHUB_ENV
           exit 0  # Stop the entire workflow if no new data
