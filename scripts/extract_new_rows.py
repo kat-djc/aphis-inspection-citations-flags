@@ -1,7 +1,6 @@
 import pandas as pd
 from datetime import datetime
-
-import pandas as pd
+import sys
 
 def extract_new_rows(original_df, new_df):
     """
@@ -32,6 +31,11 @@ def main():
     # Extract new rows
     new_rows = extract_new_rows(df_original, df_new)
 
+    # Check if there are new rows
+    if new_rows.empty:
+        print("No new data. All flagged datasets are up to date.")
+        sys.exit(0)  # Exit the script with a success status
+    
     # Generate a timestamp for the filename
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     new_rows_file_path = f"../data/flagging_process/new_rows/inspections_citations_new_rows_{timestamp}.csv"
