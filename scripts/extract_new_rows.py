@@ -1,4 +1,5 @@
 import pandas as pd
+from datetime import datetime
 
 def extract_new_rows(original_df, new_df, unique_col=None):
     """
@@ -18,12 +19,11 @@ def extract_new_rows(original_df, new_df, unique_col=None):
         new_rows = new_df[~new_df[unique_col].isin(original_df[unique_col])]
     else:
         # If no unique column, compare the entire row
-        new_rows = pd.concat([new_df, original_df])
+        new_rows = pd.concat([new_df, original_df]).drop_duplicates(keep=False)
 
     return new_rows
 
 def main():
-
     # File paths
     original_file_path = '../data/output/inspections_citations_latest.csv'
     new_file_path = '../aphis-inspection-reports/data/combined/inspections-citations.csv'
@@ -35,8 +35,12 @@ def main():
     # Extract new rows
     new_rows = extract_new_rows(df_original, df_new)
 
-    # Save new rows to a CSV file
-    new_rows.to_csv("../data/flagging_process/new_rows/inspections_citations_new_rows.csv", index=False)
+    # Generate a timestamp for the filename
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    new_rows_file_path = f"../data/flagging_process/new_rows/inspections_citations_new_rows_{timestamp}.csv"
+
+    # Save new rows to a timestamped CSV file
+    new_rows.to_csv(new_rows_file_path, index=False)
 
     # Print sanity check
     print("----------------------------------------------------------------------------")
@@ -46,8 +50,7 @@ def main():
     print(f"Shape of inspections-citations from APHIS: {df_new.shape}")
     print()
     print(f"Shape of extracted new rows: {new_rows.shape}")
-    print(f"Shape of expected results: {df_new.shape}")
-    print("Ensure that the output aligns with the expected results.")
+    print(f"New rows saved to: {new_rows_file_path}")
     print("----------------------------------------------------------------------------")
 
 if __name__ == "__main__":
