@@ -45,6 +45,11 @@ jobs:
         SCRIPT_OUTPUT=$(python extract_new_rows.py)
         # Show the output in logs
         echo "$SCRIPT_OUTPUT"
+        # Check if new data was found
+        if echo "$SCRIPT_OUTPUT" | grep -q "No new data"; then
+          echo "No new data. All flagged datasets are up to date."
+          exit 0  # Exit the job early if no new data
+        fi
         # Get the path from the output
         echo "MAIN_OUTPUT_PATH=$(echo "$SCRIPT_OUTPUT" | grep "Generated file path:" | sed 's/Generated file path: //')" >> $GITHUB_ENV
 
@@ -90,15 +95,4 @@ jobs:
         python append_new_rows.py \
           --original_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.csv \
           --new_rows_file_path "$MAIN_OUTPUT_PATH" \
-          --combined_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.csv
-
-    - name: Commit and push changes
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/kat-djc/aphis-inspection-citations-flags.git
-        git add .
-        git commit -m "Update flagged data [skip ci]" || echo "No changes to commit"
-        git push origin main
+          --combined_file_path ${{ github.workspace }}/data/output/inspections_citations_latest.c
