@@ -31,19 +31,13 @@ def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=N
         if not df_original.empty and list(df_original.columns) != list(new_rows.columns):
             raise ValueError("Column mismatch between df_original dataset and new_rows dataset.")
 
-        # Append new rows to the original dataset
-        temp_file = f"{original_file_path}.tmp"
-        new_rows.to_csv(temp_file, mode='a', index=False, header=(df_original.empty))
+         # Append new rows to the original dataset
+        df_combined = pd.concat([df_original, new_rows], ignore_index=True)
 
-        # Print the shape of temp_file before moving it to original file path
-        temp_df = pd.read_csv(temp_file)  # Read the temp file to get the shape
-        print(f"Shape of temp_file before moving: {temp_df.shape}")
+        # Save the combined dataset
+        output_path = combined_file_path
+        df_combined.to_csv(output_path, index=False)
 
-        # Move the temp file to the original file path
-        shutil.move(temp_file, original_file_path)
-
-        # Reload the updated dataset for verification
-        df_combined = pd.read_csv(original_file_path)
         print(f"Shape of combined dataset after appending: {df_combined.shape}")
 
         print("----------------------------------------------------------------------------")
