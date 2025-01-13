@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 import argparse
 import shutil
 
@@ -11,7 +12,15 @@ def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=N
         new_rows_file_path (str): Path to the new rows dataset.
         combined_file_path (str, optional): Path to a new dataset to append. Defaults to None.
     """
-    try: 
+    try:
+        # Check if the original file exists
+        if not os.path.exists(original_file_path):
+            print(f"Original file does not exist at {original_file_path}. Creating it with headers from {new_rows_file_path}.")
+            # Load new rows to extract headers
+            new_rows = pd.read_csv(new_rows_file_path)
+            new_rows.iloc[0:0].to_csv(original_file_path, index=False)  # Write only the header
+            print(f"File created at {original_file_path} with headers from {new_rows_file_path}.")
+        
         # Load datasets
         df_original = pd.read_csv(original_file_path)
         new_rows = pd.read_csv(new_rows_file_path)
@@ -29,9 +38,9 @@ def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=N
 
         # Check that columns match 
         if not df_original.empty and list(df_original.columns) != list(new_rows.columns):
-            raise ValueError("Column mismatch between df_original dataset and new_rows dataset.")
+            raise ValueError("Column mismatch between original dataset and new rows dataset.")
 
-         # Append new rows to the original dataset
+        # Append new rows to the original dataset
         df_combined = pd.concat([df_original, new_rows], ignore_index=True)
 
         # Save the combined dataset
@@ -43,7 +52,6 @@ def append_new_rows(original_file_path, new_rows_file_path, combined_file_path=N
         print("----------------------------------------------------------------------------")
         print("Appending operation completed successfully.")
         print("----------------------------------------------------------------------------")
-
 
     except Exception as e:
         # Log the error details
