@@ -1,9 +1,9 @@
-hash_id,code,kind,repeat,desc,narrative,extreme_temperatures_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+hash_id,code,kind,repeat,desc,narrative
 4362f849a92d5ef7,2.126(b),,False,ACCESS AND INSPECTION OF RECORDS AND PROPERTY; SUBMISSION OF ITINERARIES.,"A responsible adult was not available to accompany APHIS Officials during the inspection process at 11:30 pm on
-17-Jan-17.",0,No positive rules matched,[],[]
+17-Jan-17."
 ebc0890dacb6ef80,2.126(b),,True,ACCESS AND INSPECTION OF RECORDS AND PROPERTY; SUBMISSION OF ITINERARIES.,"A responsible adult was not available to accompany APHIS Officials during the inspection process at 3:00 PM on
 06-Mar-17.
-Registrant was contacted by phone at time of attempted inspection but said she was out of town .",0,No positive rules matched,[],[]
+Registrant was contacted by phone at time of attempted inspection but said she was out of town ."
 01a8aefd80b72cd8,2.1(a)(1),,False,Requirements and application.,"This is a search inspection.
 The individuals have continued to conduct regulated activity without an active USDA Animal Care license. A USDA
 inspector had spoken with the individuals in September 2024 about conducting regulated activity without a license and an
@@ -15,20 +15,20 @@ officials can assess the care of the animals. The individuals must obtain a lice
 regulated activity under the Animal Welfare Act. Continuing to conduct regulated activity without a license is a serious
 violation of the Animal Welfare Act.
 This inspection and exit interview were conducted with facility representatives.
-n",0,No positive rules matched,[],[]
+n"
 4a4091e943c1e61d,2.131(b)(1),Critical,False,Handling of animals.,"During the recapture process of a wallaroo that escaped a walk-through exhibit, while facility staff attempted to carry out
 recapture methods in a timely manner according to their standard operating procedures, unfortunately, the animal was
 severely injured when it repeatedly jumped headfirst into fencing. The animal received immediate on-site veterinary care
 and has received appropriate continued treatment for its injuries. Handling of all animals shall be done as expeditiously
 and carefully as possible in a manner that does not cause trauma, overheating, excessive cooling, behavioral stress,
-physical harm, or unnecessary discomfort.",0,No positive rules matched,[],[]
+physical harm, or unnecessary discomfort."
 4a4091e943c1e61d,3.81,,False,Environment enhancement to promote psychological well-being.,"Although the facility does have an extensive enrichment program that provides appropriate enrichment for all of their
 species, the enrichment plan as written does not meet the regulatory requirements of the environmental enhancement
 plan to promote psychological well-being of nonhuman primates as required. The plan is necessary to ensure the
 psychological health and well-being of the animals housed within the facility. The facility must develop, document and
 follow an appropriate plan for environment enhancement adequate to promote the psychological well-being of nonhuman
 primates. The plan at a minimum must address social grouping, environmental enrichment, special considerations,
-restraint devices, and exemptions to the plan.",0,No positive rules matched,[],[]
+restraint devices, and exemptions to the plan."
 4a4091e943c1e61d,3.127(d),,False,"Facilities, outdoor.","3.127 (d)Perimeter fence
 In several areas of the perimeter fence, there were gaps, trees, brush and other objects that render the fence ineffective.
 Several gates were noted with gaps in excess of 4 inches around the sides and/or bottom of the gate, that could allow
@@ -37,7 +37,7 @@ perimeter fence that were overgrown and/or overhanging, decreasing the effective
 perimeter fence, there were large rocks and a large log adjacent to the fence that also reduce the effective height. The
 fence must be constructed so that it protects the animals in the facility by restricting animals and unauthorized persons
 from going through or under it and having contact with the animals of the facility and so that it can function as a secondary
-containment system for the animals in the facility.",0,No positive rules matched,[],[]
+containment system for the animals in the facility."
 4a4091e943c1e61d,3.154,,False,Environment enhancement to promote psychological well-being.,"Although the facility does have an extensive enrichment program that provides appropriate enrichment for all of their
 species, the enrichment plan as written does not meet the regulatory requirements of the environmental enhancement
 plan to promote psychological well-being of birds as required. The plan is necessary to ensure the psychological health
@@ -51,7 +51,7 @@ All items must be in compliance within 2 more inspections or by February 19th 20
 fee and must wait 6 months to reapply. Please contact your inspector to schedule your next Re-License Inspection.
 Regulated activity can continue under your existing USDA license until it expires.
 Additional Inspectors:
-Geoffrey Olsen, VETERINARY MEDICAL OFFICER n",0,No positive rules matched,[],[]
+Geoffrey Olsen, VETERINARY MEDICAL OFFICER n"
 2ca6b36229fb10ea,3.131(d),,False,Sanitation.,"In the dry-food cooler there was a pallet containing several bags of Mazuri macropod pellets that had some loose pellets
 and several rodent droppings. Several of the outer bags had been chewed, there were many pieces of the chewed paper,
 and the rodent droppings were scattered in the areas between the bags, the present bags had not been chewed opened.
@@ -59,7 +59,7 @@ Not maintaining an adequate pest program puts the animals at risk of disease tra
 state that a safe and effective program for the control of mammalian pests shall be established and maintained.
 Correct by: 04/12/2024
 This inspection and exit interview were conducted with Facility Representative.
-n",0,No positive rules matched,[],[]
+n"
 3813bc4354cf6c1d,2.131(c)(1),Critical,False,Handling of animals.,"2.131(c)(1) Critical
 While performing in the morning bird show, the Harris’s Hawk diverted from his typical flight path for the exhibition. He
 was observed flying around and landing in multiple trees above the facility and the surrounding area for several hours but
@@ -70,7 +70,7 @@ been observed in the area since the date of disappearance. Failure to recapture 
 the animal. During public exhibition, any animal must be handled so there is minimal risk of harm to the animal and to the
 public, with sufficient distance and/or barriers between the animal and the general viewing public so as to assure the
 safety of animals and the public.
-Correct by 12 June 2024",0,No positive rules matched,[],[]
+Correct by 12 June 2024"
 3813bc4354cf6c1d,3.75(c)(1)(i),,False,"Housing facilities, general.","Noticeable rust was observed along the metal baseboard/ resting surfaces support located on the indoor portion of all
 three colobus enclosures. Excessive rust observed on wire mesh containing the heater inside the Red ruffed lemur
 enclosure. Rusty surfaces cannot be effectively cleaned and sanitized. Any surfaces that come in contact with nonhuman
@@ -80,7 +80,7 @@ Corrected at the time of inspection, 12 June 2024.
 This inspection and exit interview were conducted with facility staff.
 Additional Inspectors:
 Darren Rausch, VETERINARY MEDICAL OFFICER
-KATHARINE FRANK, VETERINARY MEDICAL OFFICER n",0,No positive rules matched,[],[]
+KATHARINE FRANK, VETERINARY MEDICAL OFFICER n"
 eaef510b8f910f59,2.1(b)(1),,False,Requirements and application,"At the Best of Tooele County & Business Expo at the Benson Grist Mill, Stansbury Park, UT, ""Otters and Others"" were
 observed to be exhibiting one fox on a leash, one bison calf in a pen, and one goat, one donkey and one horse in another
 pen along with a table of information advertising the business at approximately 5 pm on Sept. 11, 2024. The event had
@@ -96,18 +96,18 @@ The facility must apply for licensure and obtain a license from the USDA to cont
 the Animal Welfare Act. Continuing to conduct regulated activity without a license is a serious violation of the Animal
 Welfare Act.
 This inspection and exit interview were conducted with facility representative.
-n",0,No positive rules matched,[],[]
+n"
 e7fbeb6f96392bac,2.35(t),,False,RECORDKEEPING REQUIREMENTS.,"Item Recordkeeping Requirements 2.35 a 3
 At the time of inspection the facility could not find the program review or the signature sheet part of the semiannual
 report form Nov 2014. The facility could only find the inspection part of the semiannual report.
 The facility needs to insure semiannual report is complete so that in can be reviewed at the time of inspection.
-Correct from this day 10/21/15",0,No positive rules matched,[],[]
+Correct from this day 10/21/15"
 e7fbeb6f96392bac,3.53(a)(4),,False,PRIMARY ENCLOSURES.,"Item Primary Enclosures 3.53 a 4
 At the time of inspection it was noticed that due to the diameter of the cage flooring the rabbits feet was able to pass
 thru the flooring, which could injure the animals.
 Facility needs to review the flooring for the animal to insure it does not cause injury.
 Correct by close of business 10/21/15
-Exit interview conducted with facility at the end of inspection",0,No positive rules matched,[],[]
+Exit interview conducted with facility at the end of inspection"
 14e387cd168cd74d,2.31(c)(7),,False,Institutional Animal Care and Use Committee (IACUC).,"A protocol (ZV01-2024) details the use of methods to assess the efficacy of anesthesia, but these were not documented
 in individual animal records. The doses of all drugs given within the protocol are also not logged in these records.
 Additionally, the individual record for one animal did not contain documentation of the drugs given during the experiment.
@@ -116,7 +116,7 @@ facility must ensure that the IACUC review and approve, require modifications in
 approval of proposed significant changes regarding the care and use of animals in ongoing activities. Correct by
 September 13, 2024.
 This inspection and exit interview were conducted with a facility representative.
-n",0,No positive rules matched,[],[]
+n"
 df1d3ac636ebc5ed,2.31(c)(7),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"The inspector reviewed Protocol 3738 and six medical records relevant to this protocol The protocol states that
 ""animals will receive .005-.01 mg/kg of buprenorphine IM once a day for 3 days post-operatively. All animals will
 receive antibiotics pre-operatively (3-5 mg/kg of Cefazolin IV and post-operatively 3-5 mg/kg of ceftiofur IM twice a
@@ -130,7 +130,7 @@ to secure approval or withhold approval of proposed significant changes to a pro
 care and use are in accordance with legal requirements. Correct by seeking IACUC approval for significant changes
 to a protocol.
 Correct from this day forward.
-Exit interview was conducted withthe Director of Animal Research and the Animal Care Husbandry Manager",0,No positive rules matched,[],[]
+Exit interview was conducted withthe Director of Animal Research and the Animal Care Husbandry Manager"
 6e5df58ac18e449a,2.31(c)(7),,False,Institutional Animal Care and Use Committee (IACUC).,"A significant change was made to a protocol involving pigs without Institutional Animal Care and Use Committee (IACUC)
 review and approval. Pig #23340 was not monitored as frequently as stated in the protocol following heart transplant
 surgery. The protocol states that pigs will be monitored every 15 minutes for an hour, every 30 minutes for 2 hours, every
@@ -149,7 +149,7 @@ Correct by May 24, 2024 by ensuring that proposed activities, including signific
 animals, contain a complete and accurate description of the proposed use of the animals and are approved by the IACUC
 prior to starting activities or implementing any changes.
 This inspection and exit interview were conducted with a facility representative.
-n",0,No positive rules matched,[],[]
+n"
 8cd487e57a3f04f6,3.131(d),,False,SANITATION.,"Item Pest Control 3.131 d
 At the time of inspection the cow barn unit 2 New Bolton had series of bird nests in the rafters which resulted in an
 accumulation of bird droppings on the floor, railings, and other areas which can lead to contamination of food and
@@ -160,7 +160,7 @@ Correct by 7/30/14
 An exit interview took place at the end of inspection with faciity representatives.
 Inspection took place from 6/23-26/14
 Additional Inspectors
-Lupo Keri, Veterinary Medical Officer",0,No positive rules matched,[],[]
+Lupo Keri, Veterinary Medical Officer"
 01f06cad6f0c5e4f,2.31(e)(3),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"Item IACUC 2.3.1 e 3
 In May 2014 the investigator for protocol 804222 performed a dental mold bite block on a non human primate. This
 procedure had been left out of the protocol at the of its renewal.
@@ -170,7 +170,7 @@ of 2014 it was discovered that the repeated injury group was not in the experime
 protocol and therefore not approved by the IACUC.
 The investigator submitted an amendment for the protocol.
 In the future both the Principal Investigator and the IACUC need to insure protocols are complete and accurate and
-provide a complete description of the proposed use of animals.",0,No positive rules matched,[],[]
+provide a complete description of the proposed use of animals."
 01f06cad6f0c5e4f,2.38(f),,False,MISCELLANEOUS.,"Item Handling 2.38 f
 In May of 2014 a non human primate underwent a procedure as part of protocol 804222. The investigator used a
 thermal disc to keep the animal warm. The animal had been insulated from the heat disc by layers of folded
@@ -181,7 +181,7 @@ been no further incidents of this nature.
 Correct from this day 2/5/15
 This was a focused inspection
 Exit interview took place at the end of inspection with facility
-electronic version of word inspection report",1,Matched positive rules: ['temperature_value'],['temperature_value'],[]
+electronic version of word inspection report"
 53ca6845ada65c6c,2.31(e)(3),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"Item IACUC 2.31 e 3
 At the time of inspection protocol 803366 is a teaching protocol. Protocol involves various procedures such as
 rectal exams, restraint, nasogastric tubing. etc
@@ -189,14 +189,14 @@ The protocol does not indicate the limits per procedure or the number of attempt
 students per animal.
 The investigator needs to provide to the IACUC with a complete description for the proposed use of the animals as
 required by the regulation.
-Correct by 9/15/2017",0,No positive rules matched,[],[]
+Correct by 9/15/2017"
 53ca6845ada65c6c,2.33(b)(5),,False,ATTENDING VETERINARIAN AND ADEQUATE VETERINARY CARE.,"Item IACUC 2.33 b 5
 At the time of inspection 4 bottles of Enlon expired 4/2017 were found in SS at NBC.
 Outdated drugs does not constitute adequate veterinary care with current established veterinary medical
 procedures.
 Facility needs to review its monitoring procedures for drugs to insure outdated drugs are removed in a timely
 manner.
-Facility corrected this item at the time of inspection by removing the drugs from the area for proper disposal.",0,No positive rules matched,[],[]
+Facility corrected this item at the time of inspection by removing the drugs from the area for proper disposal."
 53ca6845ada65c6c,3.125(a),,False,"FACILITIES, GENERAL.","Item Facilities General 3.125 a
 1) At the time of inspection some of the outdoor pens were constructed with a wood frame and sheet metal panels
 for the walls. There were three shelters (CMKH, CMKC, and HCTM) that had areas of the sheet metal wall where
@@ -212,7 +212,7 @@ Exit interview took place at the end of inspection with the Director and other s
 Inspection took place from 7/31-8/3/2017
 Additional Inspectors
 Mcintosh Ashley, Veterinary Medical Officer
-Gladue Paula, Veterinary Medical Officer",0,No positive rules matched,[],[]
+Gladue Paula, Veterinary Medical Officer"
 b335a84303f23541,3.80(a)(2)(iii),,False,Primary enclosures.,"At the time of inspection, a review of the IACUC minutes for April 2020 and November 2020 indicated two separate
 incidents of escaped Non-human primates. The incident in April revealed that two macaques escaped from their primary
 enclosure due to the cage lock not placed in the proper position. In November 2020, two additional macaques escaped
@@ -225,7 +225,7 @@ and Animal Care staff were retrained.
 This inspection and exit interview were conducted with facility representatives.
 This inspection was conduction from 08/09/2021 to 08/12/2021.
 Additional Inspectors:
-JOHN LOPINTO, VETERINARY MEDICAL OFFICEREnd Section",0,No positive rules matched,[],[]
+JOHN LOPINTO, VETERINARY MEDICAL OFFICEREnd Section"
 b9d879c9db3d44f7,2.38(f)(1),,False,Miscellaneous.,"During the review of IACUC meeting minutes for January 2022, February 2022, and April 2022, three separate incidents
 of non-human primate escapes were identified. The incident in the January 2022 IACUC meeting minutes occurred on
 January 5, 2022. A macaque escaped during a cage change due to the animal care technician not returning the lock that
@@ -241,7 +241,7 @@ This was corrected by the facility by retraining all animal care technicians and
 involved in the incidents received individual training and additional monitoring from supervisors.
 This inspection and exit interview were conducted with facility representatives.
 This inspection was conduction from 09/07/2022 to 09/08/2022.
-n",0,No positive rules matched,[],[]
+n"
 33135b9be86594cb,2.31(c)(7),,False,Institutional Animal Care and Use Committee (IACUC).,"At the time of inspection, three incidents of unapproved protocol activities were identified in the IACUC meeting minutes:
 - During a routine animal record review on March 29, 2023, laboratory personnel identified a rhesus macaque was used
 for a procedure that was not approved under Protocol 804765. On September 23, 2022, the macaque was sedated for
@@ -261,7 +261,7 @@ under the Principal Investigator.
 With respect to the activities involving animals the IACUC, as an agent of the research facility, shall: review and approve,
 require modifications in (to secure approval), or withhold approval of proposed significant changes regarding the care and
 use of animals in ongoing activities.
-Corrected before the time of inspection through IACUC approved amendments.",0,No positive rules matched,[],[]
+Corrected before the time of inspection through IACUC approved amendments."
 33135b9be86594cb,2.38(f)(1),,False,Miscellaneous.,"On March 24, 2023, an enrichment technician placed a hammock in an enclosure of a cynomolgus macaque. The
 technician sectioned off the non-human primate in a single quadrant to safely place the hammock. Once the hammock
 was installed, the cage door was closed, locked and the macaque was allowed access to all four quadrants of the
@@ -277,7 +277,7 @@ unnecessary discomfort.
 Corrected before the time of inspection through retraining of the enrichment technician.
 This inspection was conducted from June 04, 2024 to June 05, 2024.
 This inspection and exit interview were conducted with facility representatives.
-n",0,No positive rules matched,[],[]
+n"
 f7f04b1de48910af,2.33(b)(4),,False,ATTENDING VETERINARIAN AND ADEQUATE VETERINARY CARE.,"There was an incident identified by the number 2015-11 which took place during the month of December 2015.
 The attending veterinarian (AV) inspected a rabbit for a post surgical procedure in which the skin edges were not
 apposed. The attending veterinarian gave specific written instructions to treat it as an open wound and let it heal by
@@ -290,14 +290,14 @@ Each research facility shall establish and maintain programs of adequate veterin
 research personnel involved in the care and use of animals regarding handling, immobilization, anesthesia,
 analgesia, tranquilization, and euthanasia, etc.
 The facility has corrected this issue by providing operative and recovery documentation training and provided a
-copy of the IACUC policy for veterinary medical care and best practices.",0,No positive rules matched,[],[]
+copy of the IACUC policy for veterinary medical care and best practices."
 f7f04b1de48910af,3.75(c)(1),,False,"HOUSING FACILITIES, GENERAL.","Some plastic toys/objects provided to NHP for enrichment were noticeable worn and with chewed edges.
 The surfaces of housing facilities--including furniture-type fixtures or objects within the facility-must be made of
 materials that allow them to be readily cleaned and sanitized, or removed or replaced when worn.
 In order to avoid animals from ingesting plastic particles and to properly clean and sanitize toys/object, these should
 be replaced when worn.
 To be corrected by 6-30-2016.
-An exit interview was conducted with facility representatives.",0,No positive rules matched,[],[]
+An exit interview was conducted with facility representatives."
 dd77b186228ae7dd,2.38(f)(1),,False,MISCELLANEOUS.,"Handling
 According to facility documentation, two NHP(cid:25)s, one in June 2013 and one in August 2013, were injured during
 handling. The incidents occurred during removal from their enclosures, and each animal sustained a limb injury. In
@@ -312,7 +312,7 @@ by management of the staff performing animal handling. There have not been any a
 corrective actions were implemented.
 The institution has taken appropriate corrective measures to address this item.
 This inspection was conducted at the West Point, PA site on June 17 - 20, 2014. An exit briefing was conducted on
-June 20, 2014 with the facility representatives and a copy of the inspection report was left at the facility.",0,No positive rules matched,[],[]
+June 20, 2014 with the facility representatives and a copy of the inspection report was left at the facility."
 2880f50128bba16e,2.38(f)(1),,False,MISCELLANEOUS.,"According to facility records, November 12, 2014, while performing a routine procedure, personnel discovered that a
 female, cynomolgus monkey had sustained injury to her right forelimb. Her condition was assessed and measures
 were taken to relieve any pain and/or distress. Upon being notified of the animal(cid:25)s condition, the veterinary staff
@@ -323,7 +323,7 @@ As per 2.38 (f) (1), handling of all animals shall be done as expeditiously and 
 does not cause trauma, behavioral stress, physical harm, or unnecessary discomfort.
 The research facility acted to address this item by conducting an investigation and further implementing appropriate
 corrective actions to prevent any future incidents. There have not been any additional incidents since the corrective
-actions were implemented.",0,No positive rules matched,[],[]
+actions were implemented."
 2880f50128bba16e,3.80(a)(1),,False,PRIMARY ENCLOSURES.,"According to facility records, September 1, 2015, personnel discovered a male, cynomolgus monkey outside of his
 primary enclosure. The animal was recaptured and evaluated by veterinary staff. He sustained injuries on the third
 and fourth digits on his left foot and received immediate veterinary care. At the time of inspection, the animal did not
@@ -340,7 +340,7 @@ This inspection was conducted at the West Point, PA site from September 8-11, 20
 The exit interview was conducted with facility representatives.
 Note: A corrected copy of this inspection report was hand delivered to the facility on July 19, 2016. Registrant
 elected not to sign the inspection report, but acknowledged receipt by signing USPS Return Receipt (PS Form
-3811) # 7015 1520 0000 3623 8795.",0,No positive rules matched,[],[]
+3811) # 7015 1520 0000 3623 8795."
 f6f6e68dd08e1b28,3.80(a)(2)(iii),Critical,False,Primary enclosures.,"On November 4, 2021, a rhesus macaque sustained severe injuries from another rhesus macaque in an adjoining
 enclosure. According to facility documents, an Animal Care Technician identified the injured macaque during routine
 husbandry duties. The Animal Care Technician immediately notified the LAR Veterinarian. Due to the nature of the
@@ -349,7 +349,7 @@ At the time of evaluating the incident, facility personnel noted that the chain 
 enclosures was no longer in place and the lock used to secure the chain was open. Additionally, further evaluation in the
 incident noted that a cage change had been done the day prior. Primary enclosures must be constructed and maintained
 to prevent accidental opening of any part of the enclosure to protect non-human primates from injury.
-The facility had implemented corrective actions before the time of inspection",0,No positive rules matched,[],[]
+The facility had implemented corrective actions before the time of inspection"
 f6f6e68dd08e1b28,3.82(b),,False,Feeding.,"On May 28, 2022, a room of 52 rhesus macaques were not fed. On May 29, 2022, it was discovered by Animal Care staff
 that this room of macaques did not receive their ration of monkey biscuits the day before and the animals were
 immediately fed. The Veterinarian reviewed and observed the rhesus macaques on May 30th and determined that all the
@@ -360,7 +360,7 @@ The facility had implemented corrective actions before the time of inspection.
 This inspection and exit interview were conducted with facility representatives.
 This inspection was conducted August 17, 2022 to August 18, 2022.
 Additional Inspectors:
-GLORIA MCFADDEN, VETERINARY MEDICAL OFFICER n",0,No positive rules matched,[],[]
+GLORIA MCFADDEN, VETERINARY MEDICAL OFFICER n"
 1055ee594ecaa292,2.31(d)(8),,False,Institutional Animal Care and Use Committee (IACUC).,"Two non-human primates (NHPs) were transferred from an IACAC approved imaging study protocol to a holding protocol.
 After the transfer to the holding protocol both NHPs were used by the Principal Investigator (PI) on the imaging study
 protocol. On 03-Aug-2022 the PI was asked by the LAR veterinary associate to stop using NHP A under the imaging
@@ -371,7 +371,7 @@ holding protocol.
 Proposed activities and proposed significant changes in ongoing activities that have been approved by the IACUC may be
 subject to further appropriate review and approval by officials of the research facility. However, those officials may not
 approve an activity involving the care and use of animals if it has not been approved by the IACUC.
-The facility implemented corrective actions before the time of inspection.",0,No positive rules matched,[],[]
+The facility implemented corrective actions before the time of inspection."
 1055ee594ecaa292,2.38(f)(1),Critical,False,Miscellaneous.,"Following a routine cage change on December 14th, 2022, a cage of two guinea pigs was placed on a flat bed containing
 dirty cages. After the cage change process was complete, the animal care technician rolled the flat bed with the two
 guinea pigs into the autoclave.
@@ -381,11 +381,11 @@ The facility implemented corrective actions before the time of inspection.
 This inspection and exit interview were conducted with the facility representatives.
 This inspection was conducted 02/06/2023 to 02/09/2023.
 Additional Inspectors:
-GLORIA MCFADDEN, VETERINARY MEDICAL OFFICEREnd Section",0,No positive rules matched,[],[]
+GLORIA MCFADDEN, VETERINARY MEDICAL OFFICEREnd Section"
 d1c6dc8cbef8cdf8,2.33(b)(2),,False,ATTENDING VETERINARIAN AND ADEQUATE VETERINARY CARE.,"Several of the animals in the holding pen had multiple various sized areas of circular hair loss lesions on their face,
 neck and/or body regions. There was no indication or documentation that these areas of hair loss had been
 identified, or that the veterinarian had been notified. The facility must use appropriate method to prevent, control,
-diagnosis, and treat diseases on all animals at the facility. The facility called the veterinarian during the inspection.",0,No positive rules matched,[],[]
+diagnosis, and treat diseases on all animals at the facility. The facility called the veterinarian during the inspection."
 d1c6dc8cbef8cdf8,2.33(b)(3),,False,ATTENDING VETERINARIAN AND ADEQUATE VETERINARY CARE.,"The daily observation forms at the facility are incomplete and there is no indication the SOPs are being followed.
 The standard operating procedures state animals will be brushed and receive hydrotherapy. There was no
 indication or documentation that these activities were conducted. There is minimal to no documentation of
@@ -397,13 +397,13 @@ timely and accurate treatments of animals.
 Correct by 6-1-2017.
 This inspection and exit interview were conducted with facility representative.
 Additional Inspectors
-Pannill Elizabeth, Veterinary Medical Officer",0,No positive rules matched,[],[]
+Pannill Elizabeth, Veterinary Medical Officer"
 7f1edda6d03fc4b3,2.33(b)(3),,False,Attending veterinarian and adequate veterinary care.,"F.A.S.S. AG Guide Ch. 3 pg. 22
 Facility records indicate that the 6 deer are not included in routine observations . The deer are housed in a 17 acre
 enclosure that consists of thick brush and trees making actual animal observation difficult. Frequent observation on a
 routine basis is important to detect illness or conditions that may require veterinary care. A method must be developed to
 attempt observe the deer in this enclosure on a daily basis .
-CORRECT BY: 9/30/2021",0,No positive rules matched,[],[]
+CORRECT BY: 9/30/2021"
 7f1edda6d03fc4b3,3.125(a),Critical,False,"Facilities, general.","F.A.S.S. AG Guide Ch.3 pg 17
 The sheet metal which acts as a wind break on the north side of the Front Pen is deteriorating where it meets the ground
 in 2 of the cattle holding areas. The rusted and jagged edges extend approximately 5 “to 10 “from the ground and poses a
@@ -416,7 +416,7 @@ were no longer 12 deer in Pen 2 and the disposition of the deer is unknown. Stra
 in the past by digging under the perimeter fence. Currently ,there is no method to prevent predators from digging under
 the fence or otherwise gaining access to the animal facility. Stray/feral dogs may severely injury or kill deer or cattle . The
 animal facility must be structurally strong to protect the animals from predators to prevent injury.
-CORRECT BY : 9/30/2021",0,No positive rules matched,[],[]
+CORRECT BY : 9/30/2021"
 7f1edda6d03fc4b3,3.129,,False,Feeding.,"F.A.S.S. AG Guide Ch.3 pg 21
 At time of the inspection , there are bags of cattle mineral and deer feed stored on a pallet near the edge of the open
 sided Tractor Barn. An employee did verify that these supplies were currently being fed to the animals. Several bags of
@@ -427,7 +427,7 @@ the floor serves as an attractant for pests which may contaminate the feed. Supp
 contamination/deterioration to ensure feed quality .
 CORRECT BY : 8/25/2021
 This inspection and exit briefing were conducted with the facility director.
-End Section",0,No positive rules matched,[],[]
+End Section"
 1fe33f7b62cf4c23,3.131(d),,False,Sanitation.,"F.A.S.S. AG Guide Ch.3 Pg. 23
 There is an excessive number of flies on and around the feed bunk and on the ground in the first 2 pens of the Front
 Holding Pens. There is wet bedding near the feed and water troughs in these two pens which is serving as a breeding
@@ -437,22 +437,22 @@ in this barn but none are located in close proximity to this stall. A safe and e
 ectoparasites, and avian and mammalian pests shall be established and maintained.
 CORRECT BY : 8/14/2022
 This inspection and exit briefing were conducted with facility representatives.
-n",0,No positive rules matched,[],[]
+n"
 01b1314822223047,2.31(c)(1),,False,Institutional Animal Care and Use Committee (IACUC).,"The facility has not performed a semi annual review of the program of humane care and use of animals since September
 2023, 9 months prior to the inspection. The formal review of the program ensures that the IACUC remains fully informed
 of the facility's compliance with the stipulations of the Animal Welfare Act. The facility must maintain the semi annual
 program review schedule.
-Correct at the time of the July 2024 IACUC meeting.",0,No positive rules matched,[],[]
+Correct at the time of the July 2024 IACUC meeting."
 01b1314822223047,2.31(c)(2),,False,Institutional Animal Care and Use Committee (IACUC).,"The IACUC has not performed a semi annual inspection of the facility since September 2023, 9 months prior to this
 inspection. The official semi annual inspection ensures the IACUC's oversight and maintains accountability for the
 facility's compliance. The facility must ensure that the IACUC performs the semi annual inspections on a routine 6 month
 basis.
-Correct at the time of the July 2024 IACUC meeting.",0,No positive rules matched,[],[]
+Correct at the time of the July 2024 IACUC meeting."
 01b1314822223047,2.31(c)(3),,False,Institutional Animal Care and Use Committee (IACUC).,"The IACUC has not submitted a signed semi annual report to the Institutional Official since September 20, 2023, 9
 months prior to this inspection. The report formally details the IACUC's evaluation of the facility and animal care and use
 program to ensure that the Institutional Official is aware of any deficiencies and plans for corrections. The facility must
 ensure that the semi annual reports are prepared and delivered on a semi annual basis.
-Correct following the planned IACUC inspection and program review in July, 2024.",0,No positive rules matched,[],[]
+Correct following the planned IACUC inspection and program review in July, 2024."
 01b1314822223047,2.31(d)(1),,False,Institutional Animal Care and Use Committee (IACUC).,"8 pigs on animal care and use protocol XXX02 underwent skin biopsy according to an IACUC approved standard
 operating procedure, but the approved animal care and use protocol the animals were enrolled on did not include skin
 biopsy procedures or a search for alternatives to the procedure. All research activities involving animals must be reviewed
@@ -460,35 +460,35 @@ and approved by the IACUC before being conducted. The facility must ensure that 
 approved animal care and use protocol are performed.
 The facility corrected this deficiency immediately following the inspection as reported to the inspector on May 29,204.
 This inspection and exit interview were conducted with the facility representative.
-n",0,No positive rules matched,[],[]
+n"
 a3214aa84442676b,2.31(c)(3),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"The November and May 2013 IACUC semi-annual reports to the Institutional Officer (IO) each identify minor facility
 deficiencies. These reports do not contain a reasonable and specific plan and schedule with dates for correcting
 each deficiency. The IO, as the legal representative for the research facility, should be informed of the status and
 plan to correct deficiencies to ensure they are addressed in a timely manner.
-To be corrected from this day forward",0,No positive rules matched,[],[]
+To be corrected from this day forward"
 a3214aa84442676b,2.31(e)(2),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"An IACUC approved protocol does not contain a rationale for the appropriateness of the species used. Protocols
 require this rationale in order to prevent the unnecessary use of a species in research. The IACUC must ensure all
 principle investigators provide a rationale for the appropriateness of the species used.
 To be corrected by August 1, 2014
 An exit briefing was conducted with the facility representatives.
-.",0,No positive rules matched,[],[]
+."
 a55a59616b716a54,2.36(b)(3),,False,Annual report.,"A review of IACUC approved protocol DB01V found that it included housing calves in enclosures that limit their movement
 to laying and standing. Per the facility’s census, calves were used on this protocol during the 2023 Fiscal Year, however
 this exception to the AWA standards was not reported with the annual report submitted to USDA Animal Care. To assure
 that the facility is adhering to the standards and regulations under the Act, a summary of all IACUC approved exceptions
 must be attached to the annual report. Correct by submitting a revised FY 2023 annual report with a summary of all
 exceptions including a brief explanation of the exceptions, as well as the species and number of animals affected. Correct
-by April 19, 2024.",0,No positive rules matched,[],[]
+by April 19, 2024."
 a55a59616b716a54,3.130,,False,Watering.,"On June 12, 2023, study related blood draws were challenging on 6 sheep who were found to be mildly dehydrated. Once
 presented with water, the sheep drank eagerly and for a prolonged period. Upon closer examination, the facility found the
 water line to the animals’ enclosures to be disconnected. This lapse in water access caused the sheep's thirst and
 dehydration. Potable water must be provided as often as necessary for the health and comfort of the animals. The sheep
 recovered without needing medical treatment and corrective actions were put in place at the time of inspection.
 This inspection and exit interview were conducted with facility representatives.
-n",0,No positive rules matched,[],[]
+n"
 96d5379ab8832e43,2.30(c),,False,Registration.,"No contact with registrant or business was achieved either in person at listed address or by phone or email. Discovered
 owner is deceased and apparently business has ceased to operate. No notification of change in status or cancellation
 request has been received. Registrants are required to notify Animal Care of changes in operation or to request
 cancellation of registration.
 To be corrected by 11/1/2023.
-n",0,No positive rules matched,[],[]
+n"
