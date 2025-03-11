@@ -1,4 +1,32 @@
 hash_id,code,kind,repeat,desc,narrative,extreme_temperatures_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+01b1314822223047,2.31(c)(1),,False,Institutional Animal Care and Use Committee (IACUC).,"The facility has not performed a semi annual review of the program of humane care and use of animals since September
+2023, 9 months prior to the inspection. The formal review of the program ensures that the IACUC remains fully informed
+of the facility's compliance with the stipulations of the Animal Welfare Act. The facility must maintain the semi annual
+program review schedule.
+Correct at the time of the July 2024 IACUC meeting.",0,No positive rules matched,[],[]
+01b1314822223047,2.31(c)(2),,False,Institutional Animal Care and Use Committee (IACUC).,"The IACUC has not performed a semi annual inspection of the facility since September 2023, 9 months prior to this
+inspection. The official semi annual inspection ensures the IACUC's oversight and maintains accountability for the
+facility's compliance. The facility must ensure that the IACUC performs the semi annual inspections on a routine 6 month
+basis.
+Correct at the time of the July 2024 IACUC meeting.",0,No positive rules matched,[],[]
+01b1314822223047,2.31(c)(3),,False,Institutional Animal Care and Use Committee (IACUC).,"The IACUC has not submitted a signed semi annual report to the Institutional Official since September 20, 2023, 9
+months prior to this inspection. The report formally details the IACUC's evaluation of the facility and animal care and use
+program to ensure that the Institutional Official is aware of any deficiencies and plans for corrections. The facility must
+ensure that the semi annual reports are prepared and delivered on a semi annual basis.
+Correct following the planned IACUC inspection and program review in July, 2024.",0,No positive rules matched,[],[]
+01b1314822223047,2.31(d)(1),,False,Institutional Animal Care and Use Committee (IACUC).,"8 pigs on animal care and use protocol XXX02 underwent skin biopsy according to an IACUC approved standard
+operating procedure, but the approved animal care and use protocol the animals were enrolled on did not include skin
+biopsy procedures or a search for alternatives to the procedure. All research activities involving animals must be reviewed
+and approved by the IACUC before being conducted. The facility must ensure that only procedures included on an
+approved animal care and use protocol are performed.
+The facility corrected this deficiency immediately following the inspection as reported to the inspector on May 29,204.
+This inspection and exit interview were conducted with the facility representative.
+n",0,No positive rules matched,[],[]
+a3214aa84442676b,2.31(c)(3),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"The November and May 2013 IACUC semi-annual reports to the Institutional Officer (IO) each identify minor facility
+deficiencies. These reports do not contain a reasonable and specific plan and schedule with dates for correcting
+each deficiency. The IO, as the legal representative for the research facility, should be informed of the status and
+plan to correct deficiencies to ensure they are addressed in a timely manner.
+To be corrected from this day forward",0,No positive rules matched,[],[]
 a3214aa84442676b,2.31(e)(2),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"An IACUC approved protocol does not contain a rationale for the appropriateness of the species used. Protocols
 require this rationale in order to prevent the unnecessary use of a species in research. The IACUC must ensure all
 principle investigators provide a rationale for the appropriateness of the species used.
