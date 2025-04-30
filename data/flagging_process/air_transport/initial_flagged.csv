@@ -1,4 +1,9 @@
 hash_id,code,kind,repeat,desc,narrative,air_transport_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+01b1314822223047,2.31(c)(3),,False,Institutional Animal Care and Use Committee (IACUC).,"The IACUC has not submitted a signed semi annual report to the Institutional Official since September 20, 2023, 9
+months prior to this inspection. The report formally details the IACUC's evaluation of the facility and animal care and use
+program to ensure that the Institutional Official is aware of any deficiencies and plans for corrections. The facility must
+ensure that the semi annual reports are prepared and delivered on a semi annual basis.
+Correct following the planned IACUC inspection and program review in July, 2024.",0,No positive rules matched,[],[]
 01b1314822223047,2.31(d)(1),,False,Institutional Animal Care and Use Committee (IACUC).,"8 pigs on animal care and use protocol XXX02 underwent skin biopsy according to an IACUC approved standard
 operating procedure, but the approved animal care and use protocol the animals were enrolled on did not include skin
 biopsy procedures or a search for alternatives to the procedure. All research activities involving animals must be reviewed
