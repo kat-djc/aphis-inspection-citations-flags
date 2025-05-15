@@ -1,4 +1,4 @@
-hash_id,code,kind,repeat,desc,narrative,air_transport_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+hash_id,code,kind,repeat,desc,narrative
 7f1edda6d03fc4b3,3.129,,False,Feeding.,"F.A.S.S. AG Guide Ch.3 pg 21
 At time of the inspection , there are bags of cattle mineral and deer feed stored on a pallet near the edge of the open
 sided Tractor Barn. An employee did verify that these supplies were currently being fed to the animals. Several bags of
@@ -9,7 +9,7 @@ the floor serves as an attractant for pests which may contaminate the feed. Supp
 contamination/deterioration to ensure feed quality .
 CORRECT BY : 8/25/2021
 This inspection and exit briefing were conducted with the facility director.
-End Section",0,No positive rules matched,[],[]
+End Section"
 1fe33f7b62cf4c23,3.131(d),,False,Sanitation.,"F.A.S.S. AG Guide Ch.3 Pg. 23
 There is an excessive number of flies on and around the feed bunk and on the ground in the first 2 pens of the Front
 Holding Pens. There is wet bedding near the feed and water troughs in these two pens which is serving as a breeding
@@ -19,22 +19,22 @@ in this barn but none are located in close proximity to this stall. A safe and e
 ectoparasites, and avian and mammalian pests shall be established and maintained.
 CORRECT BY : 8/14/2022
 This inspection and exit briefing were conducted with facility representatives.
-n",0,No positive rules matched,[],[]
+n"
 01b1314822223047,2.31(c)(1),,False,Institutional Animal Care and Use Committee (IACUC).,"The facility has not performed a semi annual review of the program of humane care and use of animals since September
 2023, 9 months prior to the inspection. The formal review of the program ensures that the IACUC remains fully informed
 of the facility's compliance with the stipulations of the Animal Welfare Act. The facility must maintain the semi annual
 program review schedule.
-Correct at the time of the July 2024 IACUC meeting.",0,No positive rules matched,[],[]
+Correct at the time of the July 2024 IACUC meeting."
 01b1314822223047,2.31(c)(2),,False,Institutional Animal Care and Use Committee (IACUC).,"The IACUC has not performed a semi annual inspection of the facility since September 2023, 9 months prior to this
 inspection. The official semi annual inspection ensures the IACUC's oversight and maintains accountability for the
 facility's compliance. The facility must ensure that the IACUC performs the semi annual inspections on a routine 6 month
 basis.
-Correct at the time of the July 2024 IACUC meeting.",0,No positive rules matched,[],[]
+Correct at the time of the July 2024 IACUC meeting."
 01b1314822223047,2.31(c)(3),,False,Institutional Animal Care and Use Committee (IACUC).,"The IACUC has not submitted a signed semi annual report to the Institutional Official since September 20, 2023, 9
 months prior to this inspection. The report formally details the IACUC's evaluation of the facility and animal care and use
 program to ensure that the Institutional Official is aware of any deficiencies and plans for corrections. The facility must
 ensure that the semi annual reports are prepared and delivered on a semi annual basis.
-Correct following the planned IACUC inspection and program review in July, 2024.",0,No positive rules matched,[],[]
+Correct following the planned IACUC inspection and program review in July, 2024."
 01b1314822223047,2.31(d)(1),,False,Institutional Animal Care and Use Committee (IACUC).,"8 pigs on animal care and use protocol XXX02 underwent skin biopsy according to an IACUC approved standard
 operating procedure, but the approved animal care and use protocol the animals were enrolled on did not include skin
 biopsy procedures or a search for alternatives to the procedure. All research activities involving animals must be reviewed
@@ -42,35 +42,35 @@ and approved by the IACUC before being conducted. The facility must ensure that 
 approved animal care and use protocol are performed.
 The facility corrected this deficiency immediately following the inspection as reported to the inspector on May 29,204.
 This inspection and exit interview were conducted with the facility representative.
-n",0,No positive rules matched,[],[]
+n"
 a3214aa84442676b,2.31(c)(3),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"The November and May 2013 IACUC semi-annual reports to the Institutional Officer (IO) each identify minor facility
 deficiencies. These reports do not contain a reasonable and specific plan and schedule with dates for correcting
 each deficiency. The IO, as the legal representative for the research facility, should be informed of the status and
 plan to correct deficiencies to ensure they are addressed in a timely manner.
-To be corrected from this day forward",0,No positive rules matched,[],[]
+To be corrected from this day forward"
 a3214aa84442676b,2.31(e)(2),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"An IACUC approved protocol does not contain a rationale for the appropriateness of the species used. Protocols
 require this rationale in order to prevent the unnecessary use of a species in research. The IACUC must ensure all
 principle investigators provide a rationale for the appropriateness of the species used.
 To be corrected by August 1, 2014
 An exit briefing was conducted with the facility representatives.
-.",0,No positive rules matched,[],[]
+."
 a55a59616b716a54,2.36(b)(3),,False,Annual report.,"A review of IACUC approved protocol DB01V found that it included housing calves in enclosures that limit their movement
 to laying and standing. Per the facility’s census, calves were used on this protocol during the 2023 Fiscal Year, however
 this exception to the AWA standards was not reported with the annual report submitted to USDA Animal Care. To assure
 that the facility is adhering to the standards and regulations under the Act, a summary of all IACUC approved exceptions
 must be attached to the annual report. Correct by submitting a revised FY 2023 annual report with a summary of all
 exceptions including a brief explanation of the exceptions, as well as the species and number of animals affected. Correct
-by April 19, 2024.",0,No positive rules matched,[],[]
+by April 19, 2024."
 a55a59616b716a54,3.130,,False,Watering.,"On June 12, 2023, study related blood draws were challenging on 6 sheep who were found to be mildly dehydrated. Once
 presented with water, the sheep drank eagerly and for a prolonged period. Upon closer examination, the facility found the
 water line to the animals’ enclosures to be disconnected. This lapse in water access caused the sheep's thirst and
 dehydration. Potable water must be provided as often as necessary for the health and comfort of the animals. The sheep
 recovered without needing medical treatment and corrective actions were put in place at the time of inspection.
 This inspection and exit interview were conducted with facility representatives.
-n",0,No positive rules matched,[],[]
+n"
 96d5379ab8832e43,2.30(c),,False,Registration.,"No contact with registrant or business was achieved either in person at listed address or by phone or email. Discovered
 owner is deceased and apparently business has ceased to operate. No notification of change in status or cancellation
 request has been received. Registrants are required to notify Animal Care of changes in operation or to request
 cancellation of registration.
 To be corrected by 11/1/2023.
-n",0,No positive rules matched,[],[]
+n"
