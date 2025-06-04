@@ -1,4 +1,9 @@
 hash_id,code,kind,repeat,desc,narrative,extreme_temperatures_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+01b1314822223047,2.31(c)(2),,False,Institutional Animal Care and Use Committee (IACUC).,"The IACUC has not performed a semi annual inspection of the facility since September 2023, 9 months prior to this
+inspection. The official semi annual inspection ensures the IACUC's oversight and maintains accountability for the
+facility's compliance. The facility must ensure that the IACUC performs the semi annual inspections on a routine 6 month
+basis.
+Correct at the time of the July 2024 IACUC meeting.",0,No positive rules matched,[],[]
 01b1314822223047,2.31(c)(3),,False,Institutional Animal Care and Use Committee (IACUC).,"The IACUC has not submitted a signed semi annual report to the Institutional Official since September 20, 2023, 9
 months prior to this inspection. The report formally details the IACUC's evaluation of the facility and animal care and use
 program to ensure that the Institutional Official is aware of any deficiencies and plans for corrections. The facility must
