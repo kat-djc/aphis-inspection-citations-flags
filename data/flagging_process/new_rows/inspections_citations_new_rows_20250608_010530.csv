@@ -1,10 +1,10 @@
-hash_id,code,kind,repeat,desc,narrative,extreme_temperatures_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+hash_id,code,kind,repeat,desc,narrative
 96d5379ab8832e43,2.30(c),,False,Registration.,"No contact with registrant or business was achieved either in person at listed address or by phone or email. Discovered
 owner is deceased and apparently business has ceased to operate. No notification of change in status or cancellation
 request has been received. Registrants are required to notify Animal Care of changes in operation or to request
 cancellation of registration.
 To be corrected by 11/1/2023.
-n",0,No positive rules matched,[],[]
+n"
 6aca726ab968b0ab,2.31(c),,False,Institutional Animal Care and Use Committee (IACUC).,"In 2024, the facility’s Institutional Animal Care and Use Committee (IACUC) did not review the facility’s program for the
 humane care and use of animals, inspect the animal facilities, or prepare reports of evaluations conducted, at least once
 every 6 months as required by the Act and the regulations. The facility completed inspections in December 2023 and
@@ -17,4 +17,4 @@ deficiencies to the IO so that the IO can determine that the IACUC is able to en
 and any identified issues are addressed in a timely manner. Correct at next semi-annual IACUC review, inspection and
 evaluation report.
 This inspection and exit interview were conducted with the facility representative.
-n",0,No positive rules matched,[],[]
+n"
