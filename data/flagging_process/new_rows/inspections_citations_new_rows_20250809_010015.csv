@@ -1,7 +1,7 @@
-hash_id,code,kind,repeat,desc,narrative,extreme_temperatures_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+hash_id,code,kind,repeat,desc,narrative
 b3c5536742632ec4,2.38(b),,False,Miscellaneous.,"A responsible adult was not available to accompany APHIS Officials during the inspection process at 11:30 am on 03-
 AUG-21. Left a voice message at listed contact number and waited 30 minutes at the facility.
-End Section",0,No positive rules matched,[],[]
+End Section"
 cc689e96ce0bfd5d,3.127(d),,False,"FACILITIES, OUTDOOR.","The gate section of the perimeter fence on the south side of the enclosure that houses the two camels and one
 zebra as well as the east fence line that makes up the perimeter fence is only five feet in height. The requirement
 is that the perimeter fence be six feet in height for non-dangerous type animals such as the camel and zebra. Lack
@@ -9,7 +9,7 @@ of a six foot perimeter fence does not work to restrict unwanted animals and una
 access to the animals housed within. It also cannot function as a secondary containment system. The areas of the
 perimeter fence that are five feet in height must be corrected to six feet in height. Correct by: November 30, 2014.
 Inspection and exit interview conducted with the licensee.
-End of report.",0,No positive rules matched,[],[]
+End of report."
 9fe9514b8f19700d,2.126(a)(2),,False,ACCESS AND INSPECTION OF RECORDS AND PROPERTY; SUBMISSION OF ITINERARIES.,"Required facility records (the program of veterinary care, animal inventory/acquisition records, and records of
 animal dispositions) were not available for review at the time of inspection. The unavailability of the required
 records does not allow APHIS Officials to determine if the records are accurate and complete, that the program of
@@ -18,6 +18,6 @@ Maintain all required records at the facility so they are available for review a
 this date forward.
 Note-no regulated animals were present at the time of inspection.
 This inspection and exit briefing were conducted with the licensee.
-End of report.",0,No positive rules matched,[],[]
+End of report."
 40768aede07c1809,2.126(b),,False,ACCESS AND INSPECTION OF RECORDS AND PROPERTY; SUBMISSION OF ITINERARIES.,"A responsible adult was not available to accompany APHIS Officials during the inspection process at 2:30 P.M. on
-03/05/2015.",0,No positive rules matched,[],[]
+03/05/2015."
