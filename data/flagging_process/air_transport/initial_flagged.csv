@@ -1,16 +1,4 @@
 hash_id,code,kind,repeat,desc,narrative,air_transport_flag,classification_explanation,matched_positive_rules,matched_negative_rules
-bc6340d304a294d2,3.13(c)(3),,False,CONSIGNMENTS TO CARRIERS AND INTERMEDIATE HANDLERS.,"One male Persian cat (DOB 9/12/14) was accepted for transport on January 13, 2015 (Air Waybill # 016 DSM 4919
-3911). There is a feeding and watering certification attached to the enclosure. This certification is a pre-printed,
-typed label which states ""In the next 24 hour period the animal should be offered water and food at ____ (time) on
-_____ (date)."" The date is filled out but the ""time"" is illegible to the inspectors. The supervisor states this is a
-signature. There are no specific instructions for feeding and watering this animal within the next 24 hours. This does
-not ensure the proper feeding and watering of the animal during transit.
-From this day forward, animals must not be accepted for transport unless feeding and watering certifications have
-specific instructions for feeding and watering for a 24 hour period.
-Inspection and exit briefing conducted with a facility representative.
-Additional Inspectors
-Moore Chad, Animal Care Inspector
-Ranslem Corbin, Animal Care Inspector",1,Matched positive rules: ['document_terms'],['document_terms'],[]
 c6c8e1c67493a032,2.27(a),,False,NOTIFICATION OF CHANGE OF OPERATION.,"The registrant is operating a cargo office at Seattle-Tacoma International Airport (SEA) for various airlines that
 transport animals. The Swissport personnel frequently receive and handle animals in transit for the carriers that use
 this cargo office. Although Swissport North America Inc. is registered with USDA / APHIS / Animal Care as an
