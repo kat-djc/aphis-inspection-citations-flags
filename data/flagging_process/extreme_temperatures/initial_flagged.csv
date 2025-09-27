@@ -1,9 +1,4 @@
 hash_id,code,kind,repeat,desc,narrative,extreme_temperatures_flag,classification_explanation,matched_positive_rules,matched_negative_rules
-5bcc609568b0b374,2.36(a),,False,ANNUAL REPORT.,"The facility failed to submit their Annual Report to USDA for Fiscal Year 2014. The facility must submit a report of
-it's use of USDA covered species in research for the period covering Oct 1 to Sept 30 (the fiscal year) by December
-1 of each calendar year to the Animal Care Eastern Regional Office.
-Correct by March 23, 2015
-An exit briefing was conducted with the IACUC Chair and the Research Administrator.",0,No positive rules matched,[],[]
 9eee44da99c43191,2.27(a),,False,NOTIFICATION OF CHANGE OF OPERATION.,"USDA inspector attempted to reach the IACUC Administrator upon arrival to facility and received automatic email
 response explaining that company has been closed since August 2015. The USDA Animal Care Regional Director
 must be notified of a change in business operations within 10 days after the change by certified mail. Also, the
