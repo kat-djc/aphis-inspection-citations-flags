@@ -1,4 +1,25 @@
 hash_id,code,kind,repeat,desc,narrative,air_transport_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+9eee44da99c43191,2.38(b),,False,MISCELLANEOUS.,"Section 2.38(b) - Access and inspection of records and property: Each research facility shall, during business
+hours, allow APHIS officials: (1) To enter its place of business.
+A facility representative was not available to allow access at 12:00 on 10/28/2015.",0,No positive rules matched,[],[]
+d933639e970120f8,2.38(b),,True,MISCELLANEOUS.,"There was no one available during business hours to allow APHIS Officials to enter and inspect the facilities,
+property, records, and animals on20-JUN-17 at 12:00.
+On June 20, 2017 the USDA inspector attempted to reach the IACUC Administrator upon arrival to the facility and
+received information from the security desk at St. Elizabeth Hospital that the company has been closed since
+August 2015. The USDA inspector emailed Genesys representatives and the emails were sent back as invalid
+addresses.
+This inspection and exit interview could not be conducted since the facility is no longer there.",0,No positive rules matched,[],[]
+182c9bbc7e4fbf12,3.13(c)(3),,False,CONSIGNMENTS TO CARRIERS AND INTERMEDIATE HANDLERS.,"A cat traveling on a United flight from Ontario to Kansas City, with a stop in San Francisco was inspected at the
+United Cargo office managed by Swissport. The waybill number was 016-51451396. On inspection it was
+discovered that the Owner(cid:25)s Feeding and Watering Instructions attached to the crate had not been completed.
+There was no documentation as to when the animal was last offered food and water, nor as to the feeding and
+watering instructions for the next 24 hours. Intermediate handlers should not accept a dog or cat for transport in
+commerce unless the consignor certifies in writing to the carrier and intermediate handler that the animal was
+offered food and water during the 4 hours before delivery for transport. This ensures that the animal receives
+adequate care during transport. The intermediate handler should take steps to ensure that the carriers for which
+they handle animal cargo abide by these requirements.
+To be corrected from this time forward.
+An exit briefing was conducted with a company representative.",1,"Matched positive rules: ['transport_terms', 'document_terms']","['transport_terms', 'document_terms']",[]
 aa66a56c30b68b47,3.13(c)(3),,False,CONSIGNMENTS TO CARRIERS AND INTERMEDIATE HANDLERS.,"At the time of inspection, a large dog was transported to the International Terminal Customs Area from the cargo
 hold of an airplane by Swissport, an intermediate handler, after arriving on Swiss International Flight 38 from Zurich.
 There was no signed declaration from the consignor indicating when the dog was last offered food and water, and
