@@ -1,4 +1,51 @@
 hash_id,code,kind,repeat,desc,narrative,extreme_temperatures_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+182c9bbc7e4fbf12,3.13(c)(3),,False,CONSIGNMENTS TO CARRIERS AND INTERMEDIATE HANDLERS.,"A cat traveling on a United flight from Ontario to Kansas City, with a stop in San Francisco was inspected at the
+United Cargo office managed by Swissport. The waybill number was 016-51451396. On inspection it was
+discovered that the Owner(cid:25)s Feeding and Watering Instructions attached to the crate had not been completed.
+There was no documentation as to when the animal was last offered food and water, nor as to the feeding and
+watering instructions for the next 24 hours. Intermediate handlers should not accept a dog or cat for transport in
+commerce unless the consignor certifies in writing to the carrier and intermediate handler that the animal was
+offered food and water during the 4 hours before delivery for transport. This ensures that the animal receives
+adequate care during transport. The intermediate handler should take steps to ensure that the carriers for which
+they handle animal cargo abide by these requirements.
+To be corrected from this time forward.
+An exit briefing was conducted with a company representative.",0,No positive rules matched,[],[]
+aa66a56c30b68b47,3.13(c)(3),,False,CONSIGNMENTS TO CARRIERS AND INTERMEDIATE HANDLERS.,"At the time of inspection, a large dog was transported to the International Terminal Customs Area from the cargo
+hold of an airplane by Swissport, an intermediate handler, after arriving on Swiss International Flight 38 from Zurich.
+There was no signed declaration from the consignor indicating when the dog was last offered food and water, and
+what the feeding and watering instructions were to be during transport. The owner's declaration regarding food and
+water is essential to help ensure the proper care of the animal, especially in the event of any unexpected delays.
+Transporters should take steps to ensure that all dogs and cats that they transport will travel with this
+documentation, and that it is securely attached to the outside of the primary enclosure in a manner that makes it
+easily noticed and read. The intermediate handler should take steps to ensure that the carriers for which they
+handle animal cargo abide by these requirements from this time forward.",0,No positive rules matched,[],[]
+aa66a56c30b68b47,3.14(a)(6),,False,PRIMARY ENCLOSURES USED TO TRANSPORT LIVE DOGS AND CATS.,"At the time of inspection a large dog was transported to the International Terminal Customs Area from the cargo
+hold of an airplane by Swissport, and intermediate handler, after arriving on Swiss International Flight 38 from
+Zurich. The dog was in a crate which was not correctly labeled. There were no ""LIVE ANIMAL"" markings on the
+crate, nor were there ""Up Arrow"" markings to indicate the correct upright position. The ""LIVE ANIMAL"" and arrow
+labeling on the crate help to ensure that animals in transport are handled properly by all carrier and intermediate
+handler personnel, in order to safeguard the health and well-being of the animals. Transporters should take steps to
+ensure that all primary enclosures for dogs and cats are correctly labeled at the time of consignment with ""LIVE
+ANIMAL"" on top, and one or more sides of the enclosure, and arrows to indicate upright positioning. The
+intermediate handler should take steps to ensure that the carriers for which they handle animal cargo abide by
+these requirements from this time forward.",0,No positive rules matched,[],[]
+aa66a56c30b68b47,3.16(c),,False,FOOD AND WATER REQUIREMENTS.,"At the time of inspection a large dog was transported to the International Terminal Customs Area from the cargo
+hold of an airplane by Swissport, an intermediate handler, after arriving on Swiss International Flight 38 from Zurich.
+There were no food or water receptacles in the enclosure. Food and water receptacles enable the dog or cat to be
+offered food and water during transport, or at any time as needed, according to the consignor's instructions, or in
+the event of delays, and are essential to ensuring the well-being of the animals in transit. Transporters should
+ensure that upon accepting animals for transport there are food and water receptacles in place that are securely
+attached inside the primary enclosure and placed so that the receptacles can be filled from outside the enclosure
+without opening the door. The intermediate handler should take steps to ensure that the carriers for which they
+handle animal cargo abide by these requirements from this time forward.
+An exit interview was conducted with a Swissport representative.",0,No positive rules matched,[],[]
+bc6340d304a294d2,3.13(a),,False,CONSIGNMENTS TO CARRIERS AND INTERMEDIATE HANDLERS.,"One male Persian cat (DOB 9/12/14) was accepted for transport at 4:25 am on January 13, 2015 (Air Waybill # 016
+DSM 4919 3911). The scheduled departure time was approximately 1:45 pm on the same day. The time the animal
+was accepted for transport was greater than 4 hours before the scheduled departure time. Accepting an animal for
+transport greater than four hours before departure time does not ensure that the animal received proper care prior
+to departure.
+From this day forward, animals must not be accepted for transport more than 4 hours before the scheduled
+departure time.",0,No positive rules matched,[],[]
 bc6340d304a294d2,3.13(c)(3),,False,CONSIGNMENTS TO CARRIERS AND INTERMEDIATE HANDLERS.,"One male Persian cat (DOB 9/12/14) was accepted for transport on January 13, 2015 (Air Waybill # 016 DSM 4919
 3911). There is a feeding and watering certification attached to the enclosure. This certification is a pre-printed,
 typed label which states ""In the next 24 hour period the animal should be offered water and food at ____ (time) on
