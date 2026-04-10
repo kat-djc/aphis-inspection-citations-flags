@@ -1,9 +1,9 @@
-hash_id,code,kind,repeat,desc,narrative,extreme_temperatures_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+hash_id,code,kind,repeat,desc,narrative
 5bcc609568b0b374,2.36(a),,False,ANNUAL REPORT.,"The facility failed to submit their Annual Report to USDA for Fiscal Year 2014. The facility must submit a report of
 it's use of USDA covered species in research for the period covering Oct 1 to Sept 30 (the fiscal year) by December
 1 of each calendar year to the Animal Care Eastern Regional Office.
 Correct by March 23, 2015
-An exit briefing was conducted with the IACUC Chair and the Research Administrator.",0,No positive rules matched,[],[]
+An exit briefing was conducted with the IACUC Chair and the Research Administrator."
 9eee44da99c43191,2.27(a),,False,NOTIFICATION OF CHANGE OF OPERATION.,"USDA inspector attempted to reach the IACUC Administrator upon arrival to facility and received automatic email
 response explaining that company has been closed since August 2015. The USDA Animal Care Regional Director
 must be notified of a change in business operations within 10 days after the change by certified mail. Also, the
@@ -13,17 +13,17 @@ The address of the Eastern Regional Office is:
 920 Main Campus Drive
 Suite 200
 Raleigh, NC 27606
-Correct immediately.",0,No positive rules matched,[],[]
+Correct immediately."
 9eee44da99c43191,2.38(b),,False,MISCELLANEOUS.,"Section 2.38(b) - Access and inspection of records and property: Each research facility shall, during business
 hours, allow APHIS officials: (1) To enter its place of business.
-A facility representative was not available to allow access at 12:00 on 10/28/2015.",0,No positive rules matched,[],[]
+A facility representative was not available to allow access at 12:00 on 10/28/2015."
 d933639e970120f8,2.38(b),,True,MISCELLANEOUS.,"There was no one available during business hours to allow APHIS Officials to enter and inspect the facilities,
 property, records, and animals on20-JUN-17 at 12:00.
 On June 20, 2017 the USDA inspector attempted to reach the IACUC Administrator upon arrival to the facility and
 received information from the security desk at St. Elizabeth Hospital that the company has been closed since
 August 2015. The USDA inspector emailed Genesys representatives and the emails were sent back as invalid
 addresses.
-This inspection and exit interview could not be conducted since the facility is no longer there.",0,No positive rules matched,[],[]
+This inspection and exit interview could not be conducted since the facility is no longer there."
 182c9bbc7e4fbf12,3.13(c)(3),,False,CONSIGNMENTS TO CARRIERS AND INTERMEDIATE HANDLERS.,"A cat traveling on a United flight from Ontario to Kansas City, with a stop in San Francisco was inspected at the
 United Cargo office managed by Swissport. The waybill number was 016-51451396. On inspection it was
 discovered that the Owner(cid:25)s Feeding and Watering Instructions attached to the crate had not been completed.
@@ -34,7 +34,7 @@ offered food and water during the 4 hours before delivery for transport. This en
 adequate care during transport. The intermediate handler should take steps to ensure that the carriers for which
 they handle animal cargo abide by these requirements.
 To be corrected from this time forward.
-An exit briefing was conducted with a company representative.",0,No positive rules matched,[],[]
+An exit briefing was conducted with a company representative."
 aa66a56c30b68b47,3.13(c)(3),,False,CONSIGNMENTS TO CARRIERS AND INTERMEDIATE HANDLERS.,"At the time of inspection, a large dog was transported to the International Terminal Customs Area from the cargo
 hold of an airplane by Swissport, an intermediate handler, after arriving on Swiss International Flight 38 from Zurich.
 There was no signed declaration from the consignor indicating when the dog was last offered food and water, and
@@ -43,7 +43,7 @@ water is essential to help ensure the proper care of the animal, especially in t
 Transporters should take steps to ensure that all dogs and cats that they transport will travel with this
 documentation, and that it is securely attached to the outside of the primary enclosure in a manner that makes it
 easily noticed and read. The intermediate handler should take steps to ensure that the carriers for which they
-handle animal cargo abide by these requirements from this time forward.",0,No positive rules matched,[],[]
+handle animal cargo abide by these requirements from this time forward."
 aa66a56c30b68b47,3.14(a)(6),,False,PRIMARY ENCLOSURES USED TO TRANSPORT LIVE DOGS AND CATS.,"At the time of inspection a large dog was transported to the International Terminal Customs Area from the cargo
 hold of an airplane by Swissport, and intermediate handler, after arriving on Swiss International Flight 38 from
 Zurich. The dog was in a crate which was not correctly labeled. There were no ""LIVE ANIMAL"" markings on the
@@ -53,7 +53,7 @@ handler personnel, in order to safeguard the health and well-being of the animal
 ensure that all primary enclosures for dogs and cats are correctly labeled at the time of consignment with ""LIVE
 ANIMAL"" on top, and one or more sides of the enclosure, and arrows to indicate upright positioning. The
 intermediate handler should take steps to ensure that the carriers for which they handle animal cargo abide by
-these requirements from this time forward.",0,No positive rules matched,[],[]
+these requirements from this time forward."
 aa66a56c30b68b47,3.16(c),,False,FOOD AND WATER REQUIREMENTS.,"At the time of inspection a large dog was transported to the International Terminal Customs Area from the cargo
 hold of an airplane by Swissport, an intermediate handler, after arriving on Swiss International Flight 38 from Zurich.
 There were no food or water receptacles in the enclosure. Food and water receptacles enable the dog or cat to be
@@ -63,14 +63,14 @@ ensure that upon accepting animals for transport there are food and water recept
 attached inside the primary enclosure and placed so that the receptacles can be filled from outside the enclosure
 without opening the door. The intermediate handler should take steps to ensure that the carriers for which they
 handle animal cargo abide by these requirements from this time forward.
-An exit interview was conducted with a Swissport representative.",0,No positive rules matched,[],[]
+An exit interview was conducted with a Swissport representative."
 bc6340d304a294d2,3.13(a),,False,CONSIGNMENTS TO CARRIERS AND INTERMEDIATE HANDLERS.,"One male Persian cat (DOB 9/12/14) was accepted for transport at 4:25 am on January 13, 2015 (Air Waybill # 016
 DSM 4919 3911). The scheduled departure time was approximately 1:45 pm on the same day. The time the animal
 was accepted for transport was greater than 4 hours before the scheduled departure time. Accepting an animal for
 transport greater than four hours before departure time does not ensure that the animal received proper care prior
 to departure.
 From this day forward, animals must not be accepted for transport more than 4 hours before the scheduled
-departure time.",0,No positive rules matched,[],[]
+departure time."
 bc6340d304a294d2,3.13(c)(3),,False,CONSIGNMENTS TO CARRIERS AND INTERMEDIATE HANDLERS.,"One male Persian cat (DOB 9/12/14) was accepted for transport on January 13, 2015 (Air Waybill # 016 DSM 4919
 3911). There is a feeding and watering certification attached to the enclosure. This certification is a pre-printed,
 typed label which states ""In the next 24 hour period the animal should be offered water and food at ____ (time) on
@@ -82,7 +82,7 @@ specific instructions for feeding and watering for a 24 hour period.
 Inspection and exit briefing conducted with a facility representative.
 Additional Inspectors
 Moore Chad, Animal Care Inspector
-Ranslem Corbin, Animal Care Inspector",0,No positive rules matched,[],[]
+Ranslem Corbin, Animal Care Inspector"
 c6c8e1c67493a032,2.27(a),,False,NOTIFICATION OF CHANGE OF OPERATION.,"The registrant is operating a cargo office at Seattle-Tacoma International Airport (SEA) for various airlines that
 transport animals. The Swissport personnel frequently receive and handle animals in transit for the carriers that use
 this cargo office. Although Swissport North America Inc. is registered with USDA / APHIS / Animal Care as an
@@ -91,7 +91,7 @@ was cancelled on 9 MAR 2015. Failure to notify Animal Care means that routine in
 which could put animal welfare at risk.
 The registrant must immediately notify Animal Care in writing requesting the SEA site be added to their registration.
 To be corrected from this time forward.
-An exit briefing was conducted with the General Manager, Swissport Cargo on 11 JAN 2018.",0,No positive rules matched,[],[]
+An exit briefing was conducted with the General Manager, Swissport Cargo on 11 JAN 2018."
 462fd135ca532dcd,3.13(f),Critical,False,CONSIGNMENTS TO CARRIERS AND INTERMEDIATE HANDLERS.,"The information below was provided to USDA Animal Care from a Los Angeles County Public Health
 Veterinarian(LACPHV) concerning an approximately 6-month-old dog that was transported on May 14, 2019, on
 flight SU106 Aeroflot Airlines, originating from China. Airway bill number 55500380816. The LACPH veterinarian
@@ -108,7 +108,7 @@ City Shelter the following morning by the cargo/intermediate handler and has sin
 care.
 As a registered intermediate (IH), the IH must continue to provide proper care, including veterinary care if needed,
 feeding, and housing to any dog and maintain any dog in accordance with generally accepted professional and
-husbandry practices while under their care.",0,No positive rules matched,[],[]
+husbandry practices while under their care."
 8374759dce3a1bfe,2.134(b),,False,Contingency planning.,"At the time of inspection, the contingency plan for the handling, treatment, transportation, housing, and care of animals in
 the event of an emergency was not available for review. Contingency plans must be documented according to the
 requirements of this section, reviewed annually, and the plan and all annual review documentation must be made
@@ -116,23 +116,23 @@ available to APHIS officials upon request.
 To be corrected by ensuring that the contingency plan in place at this site is available for review by APHIS officials at the
 time of inspection.
 This inspection and exit interview were conducted with representatives at the cargo handling facility.
-n",0,No positive rules matched,[],[]
+n"
 275b8d1fffbf5ea3,2.126(b),,False,ACCESS AND INSPECTION OF RECORDS AND PROPERTY; SUBMISSION OF ITINERARIES.,"A responsible adult was not available to accompany APHIS Officials during the inspection process at 1230 on
 12/23/2015. The phone number listed in the facility file was disconnected and there was no public access to the
-property.",0,No positive rules matched,[],[]
+property."
 af02af05c209a4b6,2.126(b),,False,ACCESS AND INSPECTION OF RECORDS AND PROPERTY; SUBMISSION OF ITINERARIES.,"A responsible adult was not available to accompany APHIS Officials during the inspection process at 1050-1120 on
 27-Jul-17.
 All gates to the property were closed. The inspector called and left a message on the voice mail and waited outside
-the property for approximately 30 minutes.",0,No positive rules matched,[],[]
+the property for approximately 30 minutes."
 8a027e2c71268812,2.126(b),,False,Access and inspection of records and property; submission of itineraries.,"A responsible adult was not available to accompany APHIS Officials during the inspection process at 11:40 AM on 17-
 APR-2023.
-End Section",0,No positive rules matched,[],[]
+End Section"
 3626b571d2dfe5ff,2.31(b)(3)(2),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"The one unaffiliated member only attended two of the last nine IACUC meetings. This member did not attend either
 of the two meetings where the program review and facility inspections were done. This minimum attendance does
 not assure this person has provided representation for the general community interests in the proper care and
 treatment of animals. The IACUC needs to assure the community interest is served by regular attendance at
 IACUC meetings and that the unaffiliated member participates in program reviews and facility inspections. To be
-corrected by 10-29-14.",0,No positive rules matched,[],[]
+corrected by 10-29-14."
 505bdfe2b626b77d,2.31(d)(1)(2),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"**The principal investigator for several protocols (Vet 212-1, 212-2, 212-3, 212-4) had not provided a written
 narrative description of the methods and sources used to determine alternatives since May 2004. Protocols that
 involve activities with the potential for painful and/or distressful procedures should include a current written narrative
@@ -140,10 +140,10 @@ description of the methods and sources utilized in determining alternatives. It 
 ensure the principal investigator has provided a current written narrative of alternatives to potentially painful and
 distressful procedures as required by the Animal Welfare Act.
 Correct by: May 14, 2015
-Inspection and exit interview conducted with the facility representative.",0,No positive rules matched,[],[]
+Inspection and exit interview conducted with the facility representative."
 b3c5536742632ec4,2.38(b),,False,Miscellaneous.,"A responsible adult was not available to accompany APHIS Officials during the inspection process at 11:30 am on 03-
 AUG-21. Left a voice message at listed contact number and waited 30 minutes at the facility.
-End Section",0,No positive rules matched,[],[]
+End Section"
 cc689e96ce0bfd5d,3.127(d),,False,"FACILITIES, OUTDOOR.","The gate section of the perimeter fence on the south side of the enclosure that houses the two camels and one
 zebra as well as the east fence line that makes up the perimeter fence is only five feet in height. The requirement
 is that the perimeter fence be six feet in height for non-dangerous type animals such as the camel and zebra. Lack
@@ -151,7 +151,7 @@ of a six foot perimeter fence does not work to restrict unwanted animals and una
 access to the animals housed within. It also cannot function as a secondary containment system. The areas of the
 perimeter fence that are five feet in height must be corrected to six feet in height. Correct by: November 30, 2014.
 Inspection and exit interview conducted with the licensee.
-End of report.",0,No positive rules matched,[],[]
+End of report."
 9fe9514b8f19700d,2.126(a)(2),,False,ACCESS AND INSPECTION OF RECORDS AND PROPERTY; SUBMISSION OF ITINERARIES.,"Required facility records (the program of veterinary care, animal inventory/acquisition records, and records of
 animal dispositions) were not available for review at the time of inspection. The unavailability of the required
 records does not allow APHIS Officials to determine if the records are accurate and complete, that the program of
@@ -160,6 +160,6 @@ Maintain all required records at the facility so they are available for review a
 this date forward.
 Note-no regulated animals were present at the time of inspection.
 This inspection and exit briefing were conducted with the licensee.
-End of report.",0,No positive rules matched,[],[]
+End of report."
 40768aede07c1809,2.126(b),,False,ACCESS AND INSPECTION OF RECORDS AND PROPERTY; SUBMISSION OF ITINERARIES.,"A responsible adult was not available to accompany APHIS Officials during the inspection process at 2:30 P.M. on
-03/05/2015.",0,No positive rules matched,[],[]
+03/05/2015."
