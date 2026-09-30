@@ -1,4 +1,24 @@
 hash_id,code,kind,repeat,desc,narrative,air_transport_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+4ac4ec0e8e045e74,3.8,,False,Exercise for dogs.,"The registrant did not develop and document a written exercise plan for sixteen dogs used on study #02-22. Exercise is
+important for the well-being of the dogs. Research facilities must develop, document, and follow an appropriate plan to
+provide dogs with the opportunity for exercise. In addition, the plan must be approved by the attending veterinarian and
+available during APHIS inspections for review.
+Correct by August 31, 2023.",0,No positive rules matched,[],[]
+4ac4ec0e8e045e74,3.13(a),,False,Veterinary care for dogs.,"The facility does not have a documented program of veterinary care. The facility completed a study, housing and using
+dogs in February 2023. The absence of a program of veterinary care disallows assurance that the preventive care and
+treatment is aligned with the veterinarian's authority and guidance. A written Program of Veterinary Care (PVC) for dogs
+must be established and maintained so that the facility has a current plan that provides for adequate preventative care
+and treatments as deemed necessary. The plan must include all required components as listed in the Animal Welfare Act
+and Animal Welfare Regulations, Part 3, Subpart A, Section 3.13.
+Correct by August 31, 2023.
+This inspection and exit interview were conducted with authorized person.
+Additional Inspectors:
+SUSANNE BRUNKHORST, VETERINARY MEDICAL OFFICER n",0,No positive rules matched,[],[]
+db2b84f18291f512,2.31(c)(3),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"Although IACUC meetings were held on 11-20-15 and 4-29-16 and minutes were written describing the facility
+inspection and program reviews, there are no summary reports to the Institutional Official containing the findings,
+stating if they are critical or minor, stating if there are any minority reports, and signed by a majority of the IACUC
+members. To be corrected with future reports.
+Exit briefing conducted with facility representative.",0,No positive rules matched,[],[]
 9b5d2ba58e898370,3.75(e),,False,"Housing facilities, general.","An opened bag of Cheerios and dried cranberries used for feeding enrichment were stored on a shelf in the enrichment
 area and countertop in the processing room, respectively. Neither food item had been placed in a container with a fitted lid
 after opening. Failure to appropriately store supplied food items can compromise the nutritive value of the food items
