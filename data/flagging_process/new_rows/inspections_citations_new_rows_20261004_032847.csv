@@ -1,29 +1,29 @@
-hash_id,code,kind,repeat,desc,narrative,air_transport_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+hash_id,code,kind,repeat,desc,narrative
 266f398e577b4733,3.81(c)(2),,False,ENVIRONMENT ENHANCEMENT TO PROMOTE PSYCHOLOGICAL WELL-BEING.,"A singly housed male cynomologus macaque, number 9442 in room 2A has total fur loss in every area he can
 reach. His entire front and lower back are bare. Alopecia can indicate potential psychological distress. This
 primate is not receiving any special environmental enhancements over the routine ones being provided for all in the
 room. This same male was cited in 2010, but there is no individual record to review showing if he has ever regrown
 his fur from that time. In consult with the Attending Veterinarian, this primate's environment needs to be enhanced
 or completely altered to attempt to stop the chronic fur loss. To be corrected by 9-14-15.
-Exit briefing conducted with facility representative.",0,No positive rules matched,[],[]
+Exit briefing conducted with facility representative."
 5974a827a36fdec6,2.126(b),,False,ACCESS AND INSPECTION OF RECORDS AND PROPERTY; SUBMISSION OF ITINERARIES.,"A responsible adult was not available to accompany APHIS Officials during the inspection process at 430 pm on
 05-Jul-17.
-Person in the home said owner would not be available for inspection for two weeks.",0,No positive rules matched,[],[]
+Person in the home said owner would not be available for inspection for two weeks."
 468d1d73fef54a9e,2.126(b),,False,ACCESS AND INSPECTION OF RECORDS AND PROPERTY; SUBMISSION OF ITINERARIES.,"Section 2.126(b) - Access and inspection of records and property: A responsible adult shall be made available to
 accompany APHIS officials during the inspection process.
 A responsible adult was not available to accompany APHIS Officials during the inspection process at 430 pm on
-12/04/2014.",0,No positive rules matched,[],[]
+12/04/2014."
 53ad63f25a74f90b,2.126(b),,False,ACCESS AND INSPECTION OF RECORDS AND PROPERTY; SUBMISSION OF ITINERARIES.,"A responsible adult was not available to accompany APHIS Officials during the inspection process at 11:30am -
 12:10pm on 08-May-19.
 Inspector arrived at facility, knocked on residence door, honked GOV horn, called listed phone number with no
-timely response.",0,No positive rules matched,[],[]
+timely response."
 9c184e6e4c46541e,2.40(a)(1),,False,Attending veterinarian and adequate veterinary care (dealers and exhibitors).,"Currently the facility is using two different vets for care when the animals show signs of illness or injury and take the
 animals to the vet when needed. The facility must have formal arrangements with an attending veterinarian which shall
 include a written program of veterinary care and regularly scheduled visits to the facility. This is to assure that the vet has
 appropriate authority over the care of the diverse species at the facility and to assure their health care needs are met.
 Correct by: July 31, 2022
 This inspection and exit interview were conducted with the Curator of Conservation and Welfare
-End Section",0,No positive rules matched,[],[]
+End Section"
 55b72c5a300e6647,2.31(c)(3),,False,Institutional Animal Care and Use Committee (IACUC).,"The IACUC conducted semi-annual program review and facility inspections in March 2023. A report of the IACUC's
 evaluations was submitted to the Institutional Official on March 3rd, 2023, but was not signed by a majority of the
 committee members. In order to ensure the committee has the opportunity to review the report and ensure minority views
@@ -31,4 +31,4 @@ are represented, the report must be signed by a majority of the IACUC members.
 The facility implemented corrective actions at the time of inspection to have the March report reviewed and signed by the
 committee for resubmission to the Institutional Official. To remain corrected after June 2nd, 2023.
 This inspection and exit interview were conducted with facility representatives.
-n",0,No positive rules matched,[],[]
+n"
