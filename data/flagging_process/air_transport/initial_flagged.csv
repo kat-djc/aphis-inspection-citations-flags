@@ -1,4 +1,52 @@
 hash_id,code,kind,repeat,desc,narrative,air_transport_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+91f57bc649a66fa6,2.31(c)(3),,False,Institutional Animal Care and Use Committee (IACUC).,"The August 2022 and February 2023 semi-annual reports to the Institutional Official (IO) were not signed by a majority of
+the IACUC members. Semiannual reports to the Institutional Official inform the IO of the current status of the animal
+program and facilities. The semiannual reports must be reviewed and signed by a majority of the IACUC members, and
+must include any minority views. This demonstrates consensus amongst the IACUC members, allows the opportunity for
+communication of any minority views, and helps to ensure animal health and well-being.
+Correct by August 31, 2023.",0,No positive rules matched,[],[]
+91f57bc649a66fa6,2.31(d)(2),,False,Institutional Animal Care and Use Committee (IACUC),"The amendment pertaining to the change of the principal investigator for protocol #99-01 was approved using email
+replies from the IACUC members. Appropriate IACUC review is necessary to safeguard the use of all animals in studies
+and ensures the protocols are in compliance with the Animal Welfare Act and Regulations. The IACUC shall review
+proposed activities involving the care and use of animals and any member can call for a full Committee review. If not, the
+chairman can designate a member to review and have the authority to approve, modify or request full Committee review
+of any of those activities. No member may participate in IACUC review or approval of an activity in which that member is
+personally involved in the activity or has a conflict in interest.
+Correct by August 31, 2023.
+This inspection and exit interview were conducted with the authorized person.
+Additional Inspectors:
+SUSANNE BRUNKHORST, VETERINARY MEDICAL OFFICER n",0,No positive rules matched,[],[]
+4ac4ec0e8e045e74,2.31(c)(7),,False,Institutional Animal Care and Use Committee (IACUC).,"Dogs used on protocol #02-22 underwent a terminal anesthesia procedure and increased volume blood draw that were
+not defined in the IACUC approved protocol. The addition of the procedures were approved by the attending veterinarian
+rather than the IACUC. The facility does not have an IACUC approved policy in place for the attending veterinarian to
+approve changes to a protocol on behalf of the IACUC. The IACUC shall review and approve, require modifications to
+secure approval or withhold approval of proposed significant changes regarding the care and use of animals in ongoing
+activities. Correct by August 31, 2023.",0,No positive rules matched,[],[]
+4ac4ec0e8e045e74,2.31(d)(2),,False,Institutional Animal Care and Use Committee (IACUC),"Review of IACUC minutes disclosed that protocol #02-22 was reviewed and approved solely by email correspondence
+from the IACUC. Appropriate IACUC review is necessary to safeguard the use of all animals on study. The IACUC shall
+review proposed activities involving the care and use of animals and any member can call for a full Committee review. If
+not, the chairman can designate a member to review and have the authority to approve, modify or request full Committee
+review of any of those activities. No member may participate in IACUC review or approval of an activity in which that
+member is personally involved in the activity.
+Correct by August 31, 2023.",0,No positive rules matched,[],[]
+4ac4ec0e8e045e74,2.31(e)(2),,False,Institutional Animal Care and Use Committee (IACUC).,"Protocol #02-22 did not contain a rationale for the number of animals to be used. The study stated they would use sixteen
+dogs total, dividing into subsets. This approach would ‘balance achieving statistical significance while minimizing the
+number of dogs used’. No details such as statistical tests used or statisticians consulted were included to support the
+statement. An animal use proposal must include a rationale for the appropriateness of the numbers of animals to be used
+so that the IACUC can conduct a thorough review of the components of the activities related to the care and use of
+animals and determine that the proposed activities are in accordance with the Animal Welfare Act. The proposal to
+conduct an activity involving animals must contain a rationale for the numbers of animals to be used.
+Correct by August 31, 2023.",0,No positive rules matched,[],[]
+4ac4ec0e8e045e74,2.35(c)(2),,False,Recordkeeping requirements.,"The facility did not record the disposition information for sixteen dogs. Failure to maintain completed animal records
+hinders accurate tracking, identification, and tracing of animals upon their removal from the current facility. Every research
+facility shall keep and maintain records for live dogs which fully and correctly disclose the required information for the
+transporting, selling, or otherwise disposing of any live dog.
+Correct by August 31, 2023.",0,No positive rules matched,[],[]
+4ac4ec0e8e045e74,3.8,,False,Exercise for dogs.,"The registrant did not develop and document a written exercise plan for sixteen dogs used on study #02-22. Exercise is
+important for the well-being of the dogs. Research facilities must develop, document, and follow an appropriate plan to
+provide dogs with the opportunity for exercise. In addition, the plan must be approved by the attending veterinarian and
+available during APHIS inspections for review.
+Correct by August 31, 2023.",0,No positive rules matched,[],[]
 4ac4ec0e8e045e74,3.13(a),,False,Veterinary care for dogs.,"The facility does not have a documented program of veterinary care. The facility completed a study, housing and using
 dogs in February 2023. The absence of a program of veterinary care disallows assurance that the preventive care and
 treatment is aligned with the veterinarian's authority and guidance. A written Program of Veterinary Care (PVC) for dogs
