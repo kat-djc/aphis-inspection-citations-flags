@@ -1,4 +1,9 @@
 hash_id,code,kind,repeat,desc,narrative,air_transport_flag,classification_explanation,matched_positive_rules,matched_negative_rules
+db2b84f18291f512,2.31(c)(3),,False,INSTITUTIONAL ANIMAL CARE AND USE COMMITTEE (IACUC).,"Although IACUC meetings were held on 11-20-15 and 4-29-16 and minutes were written describing the facility
+inspection and program reviews, there are no summary reports to the Institutional Official containing the findings,
+stating if they are critical or minor, stating if there are any minority reports, and signed by a majority of the IACUC
+members. To be corrected with future reports.
+Exit briefing conducted with facility representative.",0,No positive rules matched,[],[]
 9b5d2ba58e898370,3.75(e),,False,"Housing facilities, general.","An opened bag of Cheerios and dried cranberries used for feeding enrichment were stored on a shelf in the enrichment
 area and countertop in the processing room, respectively. Neither food item had been placed in a container with a fitted lid
 after opening. Failure to appropriately store supplied food items can compromise the nutritive value of the food items
